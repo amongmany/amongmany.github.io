@@ -1,0 +1,381 @@
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+.social-links-header {
+    background: #fafafa;
+    border-bottom: 0px solid #d7d7d7;
+}
+.social-links-header .social-links {
+    float: right;
+    display: block;
+}
+.social-links-header .social-links li {
+  display: block;
+  float: left;
+  margin-right: 0px;
+  width: auto;
+}
+.social-links li a {
+  width: 55px;
+  height: 55px;
+  line-height: 54px;
+  color: white;
+  border: none;
+  border-radius: 0%;
+  display: inline-block;
+  text-align: center;
+  font-size: 24px;
+}
+
+
+.social-links li.linkedin a {
+  background: #0079b8;
+}
+.social-links li.linkedin a:hover {
+  background: #00476c;
+}
+.social-links li.twitter a {
+  background: #4096cb;
+}
+.social-links li.twitter a:hover {
+  background: #296c96;
+}
+.social-links li.email a,
+.social-links li.home a {
+  background: #464e54;
+}
+.social-links li.email a:hover,
+.social-links li.home a:hover {
+  background: #23272a;
+}
+.social-links li.tumblr a {
+  background: #2c4762;
+}
+.social-links li.tumblr a:hover {
+  background: #232d3f;
+}
+.social-links li.github a {
+  background: #333333;
+}
+.social-links li.github a:hover {
+  background: #000000;
+}
+
+header h1 {
+  color: #464e54;
+  font: normal 28px/38px 'Istok Web', sans-serif;
+  font-family: 'Istok Web', sans-serif;
+  margin: 0 0 0 0;
+}
+header h2 {
+  color: #464e54;
+  font: normal 22px/28px 'Istok Web', sans-serif;
+  font-family: 'Istok Web', sans-serif;
+  margin: 10px 0 0 0;
+}
+.intro {
+    margin-top: 70px;
+    margin-bottom: 250px;
+}
+ul#cyclelist li {
+    opacity:0;
+    position:absolute;
+    list-style: none;
+    margin-left: -40px;
+}
+
+
+section.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+section.all-projects {
+    background-color: #464e54;
+    padding-bottom: 40px;
+}
+.all-projects-offset {
+    margin-top: -100px;
+}
+.project.col-xs-12.col-sm-6.col-md-4 {
+    padding: 0;
+}
+.project {
+    background: #464e54;
+    border: 0px solid white;
+    height: 320px;
+    overflow: hidden;
+    background-size: cover;
+    padding: 0px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+.project-image img {
+    position: absolute;
+    width: 100%;
+    min-height: 320px;
+}
+.project:hover img {
+    transform:scale(1.2);
+    -webkit-transform:scale(1.2); /* Safari and Chrome */
+    -moz-transform:scale(1.2); /* Firefox */
+    -ms-transform:scale(1.2); /* IE 9 */
+    -o-transform:scale(1.2); /* Opera */
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+.project-image:after {
+    content:'\A';
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(239,57,50,0.8);
+    opacity:0;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+.project:hover .project-image:after, .project:hover .project-title {
+    opacity: 1;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+.project-title {
+    opacity: 0;
+    color: white;
+    font: 700 28px/30px 'Istok Web', sans-serif;
+    font-family: 'Istok Web', sans-serif;
+    text-align: center;
+    position: relative;
+    margin-top: 140px;
+    padding: 10px;
+}
+
+
+section.about-self {
+    background-color: #f9f9f9;
+}
+section.about-self .container {
+    padding-bottom: 60px;
+}
+section.about-self .description-title {
+    font: 700 24px/30px 'Istok Web', sans-serif;
+    color: #464e54;
+    margin: 60px 0 0px;
+    padding: 0;
+  }
+  section.about-self .description-title a {
+    font-style: italic;
+  }
+  section.about-self li {
+    margin-bottom: 8px;
+  }
+  section.about-self li:before {
+    top: 1em;
+  }
+  section h2 {
+    color: #464e54;
+    font: normal 28px/34px 'Istok Web', sans-serif;
+    font-family: 'Istok Web', sans-serif;
+    margin:	0 0 -10px 0;
+  }
+  section p {
+    font: normal 16px/24px Helvetica, Arial, sans-serif;
+    color: #464e54;
+    max-width: 640px;
+    }
+  section p a {
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: none;
+    color: #464e54;
+    border-bottom: 1px solid #ef3932;
+  }
+  section p a:hover {
+    background: #ef3932;
+    color: white;
+    padding: 2px 0 2px 0;
+  }
+  section p a.red-hover {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  section p a.red-hover:hover {
+    color: white;
+    background: #ef3932;
+  }
+
+  section ul {
+    font: normal 16px/24px Helvetica, Arial, sans-serif;
+    color: #464e54;
+    list-style: none;
+    margin: 10px 0 0 -22px;
+  }
+  section ul a {
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: none;
+    color: #464e54;
+    border-bottom: 1px solid #ef3932;
+  }
+  section ul a:hover {
+    background: #ef3932;
+    color: white;
+    padding: 2px 0 2px 0;
+    text-decoration: none;
+  }
+  section ul a.red-hover {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  section ul a.red-hover:hover {
+    color: white;
+    background: #ef3932;
+  }
+
+  section li:before {
+       content: "";
+       border-color: transparent #ef3932;
+       border-style: solid;
+       border-width: 0.35em 0 0.35em 0.45em;
+       display: block;
+       height: 0;
+       width: 0;
+       left: -1em;
+      top: 0.9em;
+      position: relative;
+  }
+
+
+  /* ---------------------------------------------------------TWITTER CSS */
+  section.blockquote.twitter-blockquote {
+    background: url('http://static.tumblr.com/jn9hegd/vDGn7g3ca/twitter-bird.png') no-repeat #464e54;
+    background-size: 250px;
+    background-position: center;
+    height: auto;
+    padding: 75px 0;
+  }
+  section.blockquote.twitter-blockquote p {
+    font: 700 22px/36px 'Istok Web', sans-serif;
+    text-align: left;
+    position: static;
+    height: auto;
+    word-break: break-word;
+    color: white;
+  }
+  section.blockquote.twitter-blockquote cite {
+    font: 700 18px/28px 'Istok Web', sans-serif;
+    font-family: 'Istok Web', sans-serif;
+    text-align: right;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+  section.blockquote.twitter-blockquote a {
+    color: white;
+    border-bottom-color: white;
+  }
+  section.blockquote.twitter-blockquote ul li {
+  list-style:none;
+  overflow:hidden;
+}
+  @media (min-width: 992px) {
+    section.blockquote.twitter-blockquote {
+      padding: 100px 0 90px;
+    }
+    section.blockquote.twitter-blockquote blockquote {
+      font-size: 33px;
+      line-height: 50px;
+    }
+    section.blockquote.twitter-blockquote cite {
+      font-size: 22px;
+      line-height: 50px;
+    }
+}
+
+/* ---------------------------------------------------------FOOTER CSS */
+  footer {
+    text-align: center;
+    color: #464e54;
+    font: normal 14px/34px 'Istok Web', sans-serif;
+    font-family: 'Istok Web', sans-serif;
+    margin: 50px 0 20px 0;
+  }
+  h3.footer-name {
+    font: 700 26px/24px 'Istok Web', sans-serif;
+    color: #464e54;
+    margin-left: 16px;
+  }
+footer .social-links {
+    margin: 20px 0 40px 0;
+  }
+  ul.social-links {
+    padding: 0px 0 0 15px;
+  }
+  .social-links li {
+    display: inline;
+    margin-right: -5px;
+    width: auto;
+  }
+
+
+/* ---------------------------------------------------------PROJECT PAGE CSS */
+.intro-project-page {
+    margin-top: 138px;
+    margin-bottom: 452px;
+}
+section.project-details {
+    background-color: #464e54;
+    padding-bottom: 0px;
+    border-top: 0px solid #666666;
+    border-bottom: 0px solid #666666;
+}
+.project-details-offset {
+    margin-top: -100px;
+    background-color: #f9f9f9;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* ---------------------------------------------------------MEDIA QUERIES CSS */
+@media (min-width: 768px) {
+    .social-links-header .social-links {
+        float: right;
+        display: block;
+        margin: 24px 15px;
+    }
+    header h1 {
+      color: #464e54;
+      font: normal 58px/60px 'Istok Web', sans-serif;
+      font-family: 'Istok Web', sans-serif;
+      margin: 0 0 0 0;
+    }
+    header h2 {
+      color: #464e54;
+      font: normal 30px/34px 'Istok Web', sans-serif;
+      font-family: 'Istok Web', sans-serif;
+      margin: 10px 0 0 0;
+    }
+    .intro {
+        margin-top: 100px;
+        margin-bottom: 300px;
+    }
+    .intro-project-page {
+        margin-top: 208px;
+        margin-bottom: 572px;
+    }
+    section.blockquote.twitter-blockquote p {
+      font: 700 30px/48px 'Istok Web', sans-serif;
+      text-align: left;
+      position: static;
+      height: auto;
+      word-break: break-word;
+      color: white;
+    }
+}

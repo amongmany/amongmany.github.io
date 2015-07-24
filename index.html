@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<head>
+    <title>Hi, I'm Danny.</title>
+    <html lang="en-US">
+    <head profile="http://www.w3.org/2005/10/profile">
+    <link rel="icon"
+          type="image/png"
+          href="./images/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- BOOTSTRAP CSS LINKS -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script language="javascript" type="text/javascript" src="twitterFetcher.js"></script>
+</head>
+
+<script>
+    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement('style')
+    msViewportStyle.appendChild(
+    document.createTextNode(
+      '@-ms-viewport{width:auto!important}'
+    )
+    )
+    document.querySelector('head').appendChild(msViewportStyle)
+    }
+
+
+    var config1 = {
+      "id": '618091741141463041',
+      "domId": 'twitter_container',
+      "maxTweets": 1,
+      "enableLinks": true,
+      "showTime": false,
+      "showUser": false,
+      "showRetweet": false,
+      "showInteraction": false,
+    };
+    twitterFetcher.fetch(config1);
+
+    $(document).ready(function() {
+	 var j = 0;
+	 var delay = 2500; //millisecond delay between cycles
+	 function cycleThru(){
+	         var jmax = $("ul#cyclelist li").length -1;
+	         $("ul#cyclelist li:eq(" + j + ")")
+	                 .animate({"opacity" : "1"} ,400)
+	                 .animate({"opacity" : "1"}, delay)
+	                 .animate({"opacity" : "0"}, 400, function(){
+	                         (j == jmax) ? j=0 : j++;
+	                         cycleThru();
+	                 });
+	         };
+	 cycleThru();
+     });
+</script>
+
+<body>
+    <nav>
+     <div class="social-links-header">
+         <ul class="social-links">
+             <li class="linkedin">
+                 <a href="http://linkedin.com/in/amongmany" target="_blank">
+                     <i class="fa fa-linkedin"></i>
+                 </a>
+             </li>
+             <li class="twitter">
+                 <a href="https://twitter.com/AmongMany" target="_blank">
+                     <i class="fa fa-twitter"></i>
+                 </a>
+             </li>
+             <li class="tumblr">
+                 <a href="http://amongmany.com/" target="_blank">
+                     <i class="fa fa-tumblr" style="margin-left: -2px;"></i>
+                 </a>
+             </li>
+             <li class="github">
+                 <a href="http://github.com/amongmany" target="_blank">
+                     <i class="fa fa-github"></i>
+                 </a>
+             </li>
+             <li class="email">
+                 <a href="mailto:danny@amongmany.com" target="_blank">
+                     <i class="fa fa-envelope"></i>
+                 </a>
+             </li>
+         </ul>
+        </div>
+    </nav>
+
+  <header class="container-fluid">
+    <div class="intro col-xs-12 col-sm-10 col-sm-offset-1">
+      <h1> Hello, I'm Danny.<br />
+          <ul id="cyclelist">
+              <li>I'm a product designer.</li>
+              <li>I'm a visual designer.</li>
+              <li>I'm a UX designer.</li>
+              <li>I'm a product manager.</li>
+              <li>I'm a creative strategist.</li>
+              <li>I'm an entrepreneur.</li>
+              <li>I write a bit of code.</li>
+          </ul></h1>
+    </div>
+  </header>
+
+  <section class="all-projects">
+      <div class="container">
+          <div class="all-projects-offset">
+              <a href="./projects/ykywaasw.html">
+                  <div class="project col-xs-12 col-sm-6 col-md-4">
+                      <div class="project-image">
+                          <img src="./images/ykywaasw/ykywaasw-main.jpg">
+                      </div>
+                      <div class="project-title">
+                          YOU KNOW YOU WORK AT A STARTUP WHEN...
+                      </div>
+                  </div>
+              </a>
+              <a href="./projects/w42st.html">
+                  <div class="project col-xs-12 col-sm-6 col-md-4">
+                      <div class="project-image">
+                          <img src="./images/W42ST/w42st-main.jpg">
+                      </div>
+                      <div class="project-title">
+                          W42ST
+                      </div>
+                  </div>
+              </a>
+              <a href="./projects/beanstalk.html">
+                  <div class="project col-xs-12 col-sm-6 col-md-4">
+                      <div class="project-image">
+                          <img src="./images/beanstalk/beanstalk-main.jpg">
+                      </div>
+                      <div class="project-title">
+                          BEANSTALK LABS
+                      </div>
+                  </div>
+              </a>
+              <a href="./projects/imagebrief.html">
+                  <div class="project col-xs-12 col-sm-6 col-md-4">
+                      <div class="project-image">
+                          <img src="./images/Imagebrief/ib-main.jpg">
+                      </div>
+                      <div class="project-title">
+                          IMAGEBRIEF
+                      </div>
+                  </div>
+              </a>
+              <a href="./projects/dni.html">
+                  <div class="project col-xs-12 col-sm-6 col-md-4">
+                      <div class="project-image">
+                          <img src="./images/DNI/dni-main.jpg">
+                      </div>
+                      <div class="project-title">
+                          DATE NIGHT IS...
+                      </div>
+                  </div>
+              </a>
+              <a href="./projects/moma.html">
+                  <div class="project col-xs-12 col-sm-6 col-md-4">
+                      <div class="project-image">
+                          <img src="./images/MoMA/moma-main.jpg">
+                      </div>
+                      <div class="project-title">
+                          I WENT TO MoMA AND...
+                      </div>
+                  </div>
+              </a>
+              <a href="./projects/iicd.html">
+                  <div class="project col-xs-12 col-sm-6 col-md-4">
+                      <div class="project-image">
+                          <img src="./images/iicd/iicd-main.jpg">
+                      </div>
+                      <div class="project-title">
+                          IF I CAN DREAM
+                      </div>
+                  </div>
+              </a>
+              <a href="./projects/acwis.html">
+                  <div class="project col-xs-12 col-sm-6 col-md-4">
+                      <div class="project-image">
+                          <img src="./images/acwis/acwis-main.jpg">
+                      </div>
+                      <div class="project-title">
+                          THE WEIZMANN INSTITUTE OF SCIENCE
+                      </div>
+                  </div>
+              </a>
+              <a href="./projects/bartletts.html">
+                  <div class="project col-xs-12 col-sm-6 col-md-4">
+                      <div class="project-image">
+                          <img src="./images/bartletts/bartletts-main2.jpg">
+                      </div>
+                      <div class="project-title">
+                          BARTLETT'S FAMILIAR QUOTATIONS
+                      </div>
+                  </div>
+              </a>
+          </div>
+      </div>
+  </section>
+
+  <section class="about-self">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                  <h3 class="description-title">
+                      A bit more about me:
+                  </h3>
+
+                  <ul>
+                      <li>
+                          I have ten+ years experience in: Product Design &amp; Management, Visual Design, UX Strategy &amp; Design, and Creative Strategy, including management of strategy, design, and development teams.
+                      </li>
+                      <li>
+                          Co-Creator of: <a href="http://datenight.is/" target="_blank" class="red-hover">Date Night Is...</a>
+                          , <a href="http://beanstalklabs.co/" target="_blank" class="red-hover">Beanstalk Labs</a>, and <strong>I Wanna Nom</strong>.
+                      </li>
+                      <li>
+                          Formerly: Director of Creative Strategy at <a href="http://www.pokelondon.com" target="_blank" class="red-hover">POKE</a> <strong>NY</strong> (now known as <a href="http://www.itsmakeable.com/" target="_blank" class="red-hover">Makeable</a>).
+                      </li>
+                      <li>
+                          Past clients include: W42ST, 4C, ImageBrief, MoMA, American Express, General Mills, Dyson, DailyMotion, 19 Entertainment, TruTV, Getty Images, and many more.
+                      </li>
+                      <li>
+                          Currently <a href="./projects/ykywaasw.html" class="red-hover">growing my skills</a> in HTML, CSS, Javascript, &amp; Ruby on Rails.
+                      </li>
+                      <li>
+                          Grab a copy of my resume <a href="http://bit.ly/1KUrNeD" target="_blank" class="red-hover">here</a> or download a .pdf of specific case studies <a href="http://bit.ly/1gs5FeF" target="_blank" class="red-hover">here</a>.
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="blockquote twitter-blockquote">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-sm-8 col-sm-offset-1">
+
+            <div id="twitter_container"></div>
+
+            <cite>- <a href="http://twitter.com/Amongmany" target="_blank">@Amongmany</a></cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="lower">
+		<div class="container">
+			<div>
+				<h3 class="footer-name">Danny Nathan</h3>
+			</div>
+			<div class="social-links-footer">
+				<ul class="social-links">
+					<li class="linkedin">
+						<a href="http://linkedin.com/in/amongmany" target="_blank">
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</li>
+					<li class="twitter">
+						<a href="https://twitter.com/AmongMany" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li class="tumblr">
+						<a href="http://amongmany.com/" target="_blank">
+							<i class="fa fa-tumblr" style="margin-left: -2px;"></i>
+						</a>
+					</li>
+					<li class="github">
+						<a href="http://github.com/amongmany" target="_blank">
+							<i class="fa fa-github"></i>
+						</a>
+					</li>
+					<li class="email">
+						<a href="mailto:danny@amongmany.com" target="_blank">
+							<i class="fa fa-envelope"></i>
+						</a>
+					</li>
+				</ul>
+		  </div>
+	  </div>
+	</footer>
+
+</body>
+</html>
