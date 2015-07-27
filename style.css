@@ -342,6 +342,28 @@ section.project-details {
     padding-right: 15px;
     padding-left: 15px;
 }
+.resume p {
+    margin-bottom: -20px;
+}
+.resume ul {
+    max-width: 600px;
+}
+.resume .project-details-offset {
+    padding-top: 15px;
+}
+.resume .btn {
+    border-radius: 0px;
+    background-image: none;
+    border-color: none;
+    text-shadow: none;
+    box-shadow: none;
+    background-color: #ef3932;
+    border-color: #ef3932;
+    font-size: 14px;
+}
+.resume hr {
+    border-top: 4px solid #eee;
+}
 
 /* ---------------------------------------------------------MEDIA QUERIES CSS */
 @media (min-width: 768px) {
