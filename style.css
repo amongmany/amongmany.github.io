@@ -76,17 +76,16 @@ header h2 {
   font-family: 'Istok Web', sans-serif;
   margin: 10px 0 0 0;
 }
-.intro {
-    margin-top: 70px;
+header h3 {
+  color: #464e54;
+  font: normal 22px/28px 'Istok Web', sans-serif;
+  font-family: 'Istok Web', sans-serif;
+  margin: 10px 0 0 0;
+}
+header .intro {
+    margin-top: 200px;
     margin-bottom: 250px;
 }
-ul#cyclelist li {
-    opacity:0;
-    position:absolute;
-    list-style: none;
-    margin-left: -40px;
-}
-
 
 section.container-fluid {
     padding-left: 0px;
@@ -97,7 +96,7 @@ section.all-projects {
     padding-bottom: 40px;
 }
 .all-projects-offset {
-    margin-top: -100px;
+    margin-top: -50px;
 }
 .project.col-xs-12.col-sm-6.col-md-4 {
     padding: 0;
@@ -118,13 +117,13 @@ section.all-projects {
     min-height: 320px;
 }
 .project:hover img {
-    transform:scale(1.2);
-    -webkit-transform:scale(1.2); /* Safari and Chrome */
-    -moz-transform:scale(1.2); /* Firefox */
-    -ms-transform:scale(1.2); /* IE 9 */
-    -o-transform:scale(1.2); /* Opera */
     transition: all .5s;
     -webkit-transition: all .5s;
+    /*transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -o-transform:scale(1.2); */
 }
 .project-image:after {
     content:'\A';
@@ -153,8 +152,141 @@ section.all-projects {
     margin-top: 140px;
     padding: 10px;
 }
+.proj-name {
+    color: white;
+    font: 700 28px/30px 'Istok Web', sans-serif;
+    font-family: 'Istok Web', sans-serif;
+    text-align: left;
+    position: relative;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.proj-explainer {
+    color: white;
+    font: 400 24px/28px 'Istok Web', sans-serif;
+    font-family: 'Istok Web', sans-serif;
+    text-align: left;
+    position: relative;
+    margin-top: 5px;
+    padding-left: 10px;
+    max-width: 90%;
+}
+.proj-buttons {
+    padding-left: 10px;
+    margin-top: 20px;
+}
+.proj-buttons .btn-default {
+    background-image: none;
+    border-radius: 0px;
+    background-color: #ef3932;
+    color: #ffffff;
+    text-shadow: none;
+    border: none;
+    font: 400 16px/16px 'Istok Web', sans-serif;
+    text-transform: uppercase;
+    padding: 6px 20px;
+}
+.proj-more-info {
+    padding-left: 10px;
+    margin-top: 40px;
+}
+.proj-more-info .btn-default {
+    background-image: none;
+    border-radius: 0px;
+    background-color: #ef3932;
+    color: #ffffff;
+    text-shadow: none;
+    border: none;
+    font: 400 16px/16px 'Istok Web', sans-serif;
+    text-transform: uppercase;
+    padding: 6px 20px;
+    margin-bottom: 20px;
+}
+.proj-content p {
+    color: #ffffff;
+}
+.proj-small {
+    margin-bottom: 60px;
+}
 
+/* ---------------------------------------------------------CAROUSEL CSS */
+#tagasauris .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.3);
+    border: 0px solid #fff;
+}
+#tagasauris .carousel-indicators .active {
+    width: 6px;
+    height: 6px;
+    margin: 1px;
+    background-color: rgba(255,255,255,1);
+}
+#tagasauris .carousel-control.right {
+    background-image: none;
+}
+#tagasauris .carousel-control.left {
+    background-image: none;
+}
 
+#imagebrief .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.3);
+    border: 0px solid #fff;
+}
+#imagebrief .carousel-indicators .active {
+    width: 6px;
+    height: 6px;
+    margin: 1px;
+    background-color: rgba(255,255,255,1);
+}
+#imagebrief .carousel-control.right {
+    background-image: none;
+}
+#imagebrief .carousel-control.left {
+    background-image: none;
+}
+
+#moma .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.3);
+    border: 0px solid #fff;
+}
+#moma .carousel-indicators .active {
+    width: 6px;
+    height: 6px;
+    margin: 1px;
+    background-color: rgba(255,255,255,1);
+}
+#moma .carousel-control.right {
+    background-image: none;
+}
+#moma .carousel-control.left {
+    background-image: none;
+}
+
+#iicd .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.3);
+    border: 0px solid #fff;
+}
+#iicd .carousel-indicators .active {
+    width: 6px;
+    height: 6px;
+    margin: 1px;
+    background-color: rgba(255,255,255,1);
+}
+#iicd .carousel-control.right {
+    background-image: none;
+}
+#iicd .carousel-control.left {
+    background-image: none;
+}
+/* ---------------------------------------------------------ABOUT SELF SECTION CSS */
 section.about-self {
     background-color: #f9f9f9;
 }
@@ -236,7 +368,7 @@ section.about-self .description-title {
     background: #ef3932;
   }
 
-  section li:before {
+  section.about-self li:before {
        content: "";
        border-color: transparent #ef3932;
        border-style: solid;
@@ -249,53 +381,6 @@ section.about-self .description-title {
       position: relative;
   }
 
-
-  /* ---------------------------------------------------------TWITTER CSS */
-  section.blockquote.twitter-blockquote {
-    background: url('http://static.tumblr.com/jn9hegd/vDGn7g3ca/twitter-bird.png') no-repeat #464e54;
-    background-size: 250px;
-    background-position: center;
-    height: auto;
-    padding: 75px 0;
-  }
-  section.blockquote.twitter-blockquote p {
-    font: 700 22px/36px 'Istok Web', sans-serif;
-    text-align: left;
-    position: static;
-    height: auto;
-    word-break: break-word;
-    color: white;
-  }
-  section.blockquote.twitter-blockquote cite {
-    font: 700 18px/28px 'Istok Web', sans-serif;
-    font-family: 'Istok Web', sans-serif;
-    text-align: right;
-    color: white;
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-  }
-  section.blockquote.twitter-blockquote a {
-    color: white;
-    border-bottom-color: white;
-  }
-  section.blockquote.twitter-blockquote ul li {
-  list-style:none;
-  overflow:hidden;
-}
-  @media (min-width: 992px) {
-    section.blockquote.twitter-blockquote {
-      padding: 100px 0 90px;
-    }
-    section.blockquote.twitter-blockquote blockquote {
-      font-size: 33px;
-      line-height: 50px;
-    }
-    section.blockquote.twitter-blockquote cite {
-      font-size: 22px;
-      line-height: 50px;
-    }
-}
 
 /* ---------------------------------------------------------FOOTER CSS */
   footer {
@@ -379,6 +464,12 @@ section.project-details {
       margin: 0 0 0 0;
     }
     header h2 {
+      color: #464e54;
+      font: normal 24px/32px 'Istok Web', sans-serif;
+      font-family: 'Istok Web', sans-serif;
+      margin: 10px 0 0 0;
+    }
+    header h3 {
       color: #464e54;
       font: normal 30px/34px 'Istok Web', sans-serif;
       font-family: 'Istok Web', sans-serif;
