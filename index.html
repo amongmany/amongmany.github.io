@@ -32,24 +32,16 @@
     document.querySelector('head').appendChild(msViewportStyle)
     }
 
-    // function showDiv() {
-    //     document.getElementById('tag-learn-more').style.display = "none";
-    //     document.getElementById('tag-more-content').style.display = "block";
-    // }
-
     $(document).ready(function(){
-        $("#tag-more-content-close").click(function(){
-            $("#tag-more-content").hide();
-            $("#tag-more-content-close").hide();
-            $("#tag-learn-more").show();
+        $("#old-work-close").click(function(){
+            $("#past-work").slideUp(300);
+            $("#show-past-work").show();
         });
-        $("#tag-learn-more").click(function(){
-            $("#tag-more-content").show(500);
-            $("#tag-more-content-close").show();
-            $("#tag-learn-more").hide();
+        $("#show-past-work").click(function(){
+            $("#past-work").slideDown(300);
+            $("#show-past-work").hide();
+        });
     });
-});
-
 </script>
 
 <body>
@@ -86,19 +78,22 @@
     </nav>
 
   <header class="container-fluid">
-    <div class="intro col-xs-12 col-sm-8 col-sm-offset-2 col-md-6">
+    <div class="intro col-xs-12 col-sm-8 col-sm-offset-2">
       <h1> Hello, I'm Danny.</h1>
-      <h2>I create products that solve business problems and surprise &amp; delight people.</h2>
+      <!-- <h2>I create products that solve business problems and surprise &amp; delight people.</h2>
+      <h2>I design products that surprise &amp; delight.</h2>
+      <h2>I'm a product designer &amp; strategist. Lately I've been focused on the intersection of A.I., search, and video.</h2> -->
+      <h2>I design products that surprise &amp; delight.<br />Recently focused on the intersection of AI, search, &amp; video.</h2>
     </div>
   </header>
+
 
   <section class="all-projects">
       <div class="container">
           <div class="all-projects-offset">
-
             <!-- TAGASAURIS PROJECT -->
               <div class="row">
-                  <div class="col-sm-12 col-md-10 col-md-offset-1">
+                  <div class="col-xs-12">
                       <div id="tagasauris" class="carousel slide" data-ride="carousel" data-interval="false">
                           <!-- Indicators -->
                           <ol class="carousel-indicators">
@@ -107,6 +102,8 @@
                             <li data-target="#tagasauris" data-slide-to="2"></li>
                             <li data-target="#tagasauris" data-slide-to="3"></li>
                             <li data-target="#tagasauris" data-slide-to="4"></li>
+                            <li data-target="#tagasauris" data-slide-to="5"></li>
+                            <li data-target="#tagasauris" data-slide-to="6"></li>
                           </ol>
                           <!-- Wrapper for slides -->
                           <div class="carousel-inner" role="listbox">
@@ -120,10 +117,16 @@
                               <img src="./images/tagasauris/tag-slide-gt.jpg" alt="Video Search">
                             </div>
                             <div class="item">
+                              <img src="./images/tagasauris/tag-slide-mobile.jpg" alt="Video Search">
+                            </div>
+                            <div class="item">
                               <img src="./images/tagasauris/tag-slide-nashville.jpg" alt="Disney TV Genome">
                             </div>
                             <div class="item">
                               <img src="./images/tagasauris/tag-slide-syt.jpg" alt="ShopYouTube">
+                            </div>
+                            <div class="item">
+                              <img src="./images/tagasauris/tag-slide-hyperted.jpg" alt="Hyperted">
                             </div>
                           </div>
                           <!-- Controls -->
@@ -137,46 +140,82 @@
                           </a>
                       </div>
                       <!-- PROJECT TITLE -->
-                      <div class="proj-name">Tagasauris:</div>
-                      <div class="proj-explainer">Exploring the intersection of artificial intelligence, search, and video content.</div>
-                      <div class="proj-buttons">
-                        <a class="btn btn-default" id="tag-learn-more" role="button">Learn more<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="margin-left:10px;"></span></a>
-                        <span class="pull-right glyphicon glyphicon-remove" id="tag-more-content-close"aria-hidden="true" style="display:none; color:#ffffff; font-size:20px;"></span>
-                    </div>
-                    <!-- HIDDEN DIV WITH MORE INFO -->
-                    <div class="proj-more-info" id="tag-more-content" style="display:none;">
+                      <div class="proj-more-info" id="tag-more-content">
+                          <div class="proj-name">Tagasauris:</div>
+                          <div class="proj-explainer">Exploring the intersection of artificial intelligence, search, and video content.</div>
+                          <!-- <div class="proj-buttons">
+                            <a class="btn btn-default" id="tag-learn-more" role="button">Learn more<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="margin-left:10px;"></span></a>
+                            <span class="pull-right glyphicon glyphicon-remove" id="tag-more-content-close"aria-hidden="true" style="display:none; color:#ffffff; font-size:20px;"></span>
+                        </div> -->
+                        <br />
+
                         <div class="proj-content">
                             <p><strong>Videos online are black boxes.</strong><br />
-                                It's never been possible to <i>search inside video</i> to determine what's happening at any given moment. Search engines don't analyze videos; they catalog the text surrounding a video <i>(titles, descriptions, comments, etc.)</i> in order to find potentially relevant content. A search returns full-length videos, forcing a viewer to watch the whole thing &mdash; whether it's one minute or one hour &mdash; to find the relevant moments. </p>
+                                It's never been possible to <i>search inside video</i> to determine what's happening at any given moment. Search engines don't analyze videos; they catalog the text surrounding a video <i>(titles, descriptions, comments, etc.)</i> in order to find potentially relevant content. A search returns full-length videos, forcing a viewer to watch the whole thing &mdash; whether it's one minute or one hour &mdash; to find the relevant moments. </p><br />
 
                             <p><strong>Until now...</strong><br />
-                                Tagasauris uses A.I. (a combination of Computer Vision, ML, Deep Learning, NLP, and Human Assisted Computation) to understand video from the inside out. We search inside video, making it easy to find the precise moments users are looking for. And, our technology unlocks new opportunities for creators, publishers, and brands to curate and monetize their video &mdash; whether archived or live. </p>
+                                Tagasauris uses AI <i>(a combination of Computer Vision, Machine Learning, Deep Learning, Natural Language Processing, and Human Assisted Computation)</i> to understand video from the inside out. We search inside video, making it easy to find the precise moments users are looking for. And, our technology unlocks new opportunities for creators, publishers, and brands to curate and monetize their video &mdash; whether archived or live. </p><br />
 
                             <p>While our approach is sophisticated, the result for users is simple: the ability to quickly and easily discover, consume, explore, and share moments within any video, no matter the source.</p>
+                        </div> <!-- END proj-content -->
+                    </div> <!-- END proj-more-info -->
 
-                            <hr />
-                            <p><strong> See our Technology in Action:</strong></p>
-                            <a class="btn btn-default" href="http://videoanalysis.tagasauris.com" role="button" target="_blank">Demo: Video Decomposition<span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="margin-left:10px;"></span></a><br />
-                            <a class="btn btn-default" href="http://search.tagasauris.com" role="button" target="_blank">Demo: Search within Video<span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="margin-left:10px;"></span></a><br />
-                            <a class="btn btn-default" href="./projects/disney.html" role="button">Project: The TV Genome for Disney/ABC<span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="margin-left:10px;"></span></a><br />
-                            <a class="btn btn-default" href="./projects/syt.html" role="button">ShopYouTube: Making video shoppable<span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="margin-left:10px;"></span></a>
-                        </div>
-                    </div> <!-- END HIDDEN DIV -->
+                            <br />
+                            <br />
+                            <h3> See our Technology in Action:</h3>
+                            <div class="row"> <!-- ROW -->
+                                <div class="tag-proj col-xs-12 col-sm-6">
+                                    <img src="./images/tagasauris/tag-slide-bond.jpg" class="img-responsive"><br />
+                                    <a class="btn btn-default" href="http://videoanalysis.tagasauris.com" role="button" target="_blank">Demo: Video Decomposition<span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="margin-left:10px;"></span></a>
+                                </div>
+                                <div class="tag-proj col-xs-12 col-sm-6">
+                                    <img src="./images/tagasauris/tag-slide-gt.jpg" class="img-responsive"><br />
+                                    <a class="btn btn-default" href="http://search.tagasauris.com" role="button" target="_blank">Demo: Search within Video<span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="margin-left:10px;"></span></a>
+                                </div>
+                            </div> <!-- END ROW -->
+                            <div class="row"> <!-- ROW -->
+                                <div class="tag-proj col-xs-12 col-sm-6">
+                                    <img src="./images/tagasauris/tag-slide-mobile.jpg" class="img-responsive"><br />
+                                    <a class="btn btn-default" href="http://share.framerjs.com/eui64o0t03zt/" role="button" target="_blank">Prototype: Mobile App<span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="margin-left:10px;"></span></a>
+                                </div>
+                                <div class="tag-proj col-xs-12 col-sm-6">
+                                    <img src="./images/tagasauris/tag-slide-nashville.jpg" class="img-responsive"><br />
+                                    <a class="btn btn-default" href="./projects/disney.html" role="button">The TV Genome for Disney/ABC<span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="margin-left:10px;"></span></a>
+                                </div>
+                            </div> <!-- END ROW -->
+                            <div class="row">
+                                <div class="tag-proj col-xs-12 col-sm-6">
+                                    <img src="./images/tagasauris/tag-slide-syt.jpg" class="img-responsive"><br />
+                                    <a class="btn btn-default" href="./projects/syt.html" role="button">Demo: ShopYouTube<span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="margin-left:10px;"></span></a>
+                                </div>
+                                <div class="tag-proj col-xs-12 col-sm-6">
+                                    <img src="./images/tagasauris/tag-slide-hyperted.jpg" class="img-responsive"><br />
+                                    <a class="btn btn-default" href="http://linkedtv.eurecom.fr/Hyperted/" role="button">Mediafragment Search: HyperTED<span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="margin-left:10px;"></span></a>
+                                </div>
+                            </div>
                   </div>
               </div> <!-- END ROW -->
 
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
+              <!-- <h2 style="margin-left:30px;">Some Older Work:</h2> -->
+              <div class="text-center proj-buttons">
+                  <a class="btn btn-default" id="show-past-work" role="button">View Some of My Past Work<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true" style="margin-left:10px;"></span></a>
+              </div>
+          </div> <!-- END all-projects-offset -->
+        </div> <!-- END CONTAINER -->
+    </section> <!-- END section all-projects -->
 
-              <!-- IMAGEBRIEF PROJECT -->
-                <div class="row">
-                    <div class="col-sm-12 col-md-10 col-md-offset-1">
+    <section class="past-work" id="past-work" style="display:none;">
+        <div class="container">
+            <span class="glyphicon glyphicon-remove pull-right" id="old-work-close"aria-hidden="true"></span>
+            <div id="old-work">
+                <h2>I've had the opportunity to design products &amp; services for:</h2><br />
+                <img src="./images/brands.png" class="img-responsive"><br /><br />
+                <h2>Here is a selection of my work:</h2><br />
+
+                <!-- IMAGEBRIEF PROJECT -->
+                <div class="row"> <!-- ROW -->
+                    <!-- IMAGEBRIEF PROJECT -->
+                    <div class="proj-old col-xs-12">
                         <div id="imagebrief" class="carousel slide" data-ride="carousel" data-interval="false">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
@@ -223,119 +262,186 @@
                     </div>
                 </div> <!-- END ROW -->
 
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-
-                <!-- DATE NIGHT IS PROJECT -->
-                  <div class="row">
-                      <div class="proj-small col-xs-12 col-sm-4">
-                          <img src="./images/dni/dni-main.jpg" class="img-responsive"><br />
+                <div class="row"> <!-- ROW -->
+                <!-- BARTLETT'S PROJECT -->
+                      <div class="proj-old col-xs-12 col-sm-6">
+                          <img src="./images/bartletts/bartletts-slide-1.jpg" class="img-responsive">
                           <!-- PROJECT TITLE -->
-                          <div class="proj-name" style="font-size:24px; line-height:28px;">Date Night Is...</div>
-                          <div class="proj-explainer" style="font-size: 16px; line-height:22px;">An application that recommends location-specific, interest-aware date ideas for couples in established relationships.</div>
+                          <div class="proj-name">Bartlett's Familiar Quotations</div>
+                          <div class="proj-explainer">20,000 famous quotes, now available right in your pocket.</div>
                           <div class="proj-buttons">
-                            <a class="btn btn-default" href="./projects/dni.html" role="button">Learn more<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="margin-left:10px;"></span></a>
+                            <a class="btn btn-default" href="./projects/bartletts.html" role="button">Learn more<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="margin-left:10px;"></span></a>
                         </div>
                       </div>
-
-                  <!-- BARTLETT'S PROJECT -->
-                        <div class="proj-small col-xs-12 col-sm-4">
-                            <img src="./images/bartletts/bartletts-main2.jpg" class="img-responsive"><br />
-                            <!-- PROJECT TITLE -->
-                            <div class="proj-name" style="font-size:24px; line-height:28px;">Bartlett's Familiar Quotations</div>
-                            <div class="proj-explainer" style="font-size: 16px; line-height:22px;">20,000 famous quotes, now available right in your pocket.</div>
-                            <div class="proj-buttons">
-                              <a class="btn btn-default" href="./projects/bartletts.html" role="button">Learn more<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="margin-left:10px;"></span></a>
+                      <!-- IICD PROJECT -->
+                      <div class="proj-old col-xs-12 col-sm-6">
+                          <div id="iicd" class="carousel slide" data-ride="carousel" data-interval="false">
+                              <!-- Indicators -->
+                              <ol class="carousel-indicators">
+                                <li data-target="#iicd" data-slide-to="0" class="active"></li>
+                                <li data-target="#iicd" data-slide-to="1"></li>
+                                <li data-target="#iicd" data-slide-to="2"></li>
+                                <li data-target="#iicd" data-slide-to="3"></li>
+                                <li data-target="#iicd" data-slide-to="4"></li>
+                                <li data-target="#iicd" data-slide-to="5"></li>
+                                <li data-target="#iicd" data-slide-to="6"></li>
+                                <li data-target="#iicd" data-slide-to="7"></li>
+                                <li data-target="#iicd" data-slide-to="8"></li>
+                              </ol>
+                              <!-- Wrapper for slides -->
+                              <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                  <img src="./images/iicd/iicd-slide-1.jpg" alt="If I Can Dream">
+                                </div>
+                                <div class="item">
+                                  <img src="./images/iicd/iicd-slide-2.jpg" alt="If I Can Dream">
+                                </div>
+                                <div class="item">
+                                  <img src="./images/iicd/iicd-slide-3.jpg" alt="If I Can Dream">
+                                </div>
+                                <div class="item">
+                                  <img src="./images/iicd/iicd-slide-4.jpg" alt="If I Can Dream">
+                                </div>
+                                <div class="item">
+                                  <img src="./images/iicd/iicd-slide-5.jpg" alt="If I Can Dream">
+                                </div>
+                                <div class="item">
+                                  <img src="./images/iicd/iicd-slide-6.jpg" alt="If I Can Dream">
+                                </div>
+                                <div class="item">
+                                  <img src="./images/iicd/iicd-slide-7.jpg" alt="If I Can Dream">
+                                </div>
+                                <div class="item">
+                                  <img src="./images/iicd/iicd-slide-8.jpg" alt="If I Can Dream">
+                                </div>
+                                <div class="item">
+                                  <img src="./images/iicd/iicd-slide-9.jpg" alt="If I Can Dream">
+                                </div>
+                              </div>
+                              <!-- Controls -->
+                              <a class="left carousel-control" href="#iicd" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="#iicd" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
                           </div>
+                          <!-- PROJECT TITLE -->
+                          <div class="proj-name">If I Can Dream</div>
+                          <div class="proj-explainer">Reality TV, reinvented for our digital-first world.</div>
+                          <div class="proj-buttons">
+                            <a class="btn btn-default" href="./projects/iicd.html" role="button">Learn more<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="margin-left:10px;"></span></a>
                         </div>
+                    </div> <!-- END IICD -->
+                  </div> <!-- END ROW -->
 
-                    <!-- YKYWAASW PROJECT -->
-                          <div class="proj-small col-xs-12 col-sm-4">
-                              <img src="./images/ykywaasw/ykywaasw-main.jpg" class="img-responsive"><br />
+              <!-- DATE NIGHT IS & I WANNA NOM PROJECTS -->
+                <div class="row"> <!-- ROW -->
+                    <!-- DATE NIGHT IS PROJECT -->
+                    <div class="proj-old col-xs-12 col-sm-6">
+                        <div id="dni" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                              <li data-target="#dni" data-slide-to="0" class="active"></li>
+                              <li data-target="#dni" data-slide-to="1"></li>
+                              <li data-target="#dni" data-slide-to="2"></li>
+                              <li data-target="#dni" data-slide-to="3"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                              <div class="item active">
+                                <img src="./images/dni/dni-slide-1.jpg" alt="Date Night Is...">
+                              </div>
+                              <div class="item">
+                                <img src="./images/dni/dni-slide-2.jpg" alt="Date Night Is...">
+                              </div>
+                              <div class="item">
+                                <img src="./images/dni/dni-slide-3.jpg" alt="Date Night Is...">
+                              </div>
+                              <div class="item">
+                                <img src="./images/dni/dni-slide-4.jpg" alt="Date Night Is...">
+                              </div>
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#dni" role="button" data-slide="prev">
+                              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#dni" role="button" data-slide="next">
+                              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                            </div>
+                        </div>
+                        <!-- PROJECT TITLE -->
+                        <div class="proj-name">Date Night Is...</div>
+                        <div class="proj-explainer">An application that recommends location-specific, interest-aware date ideas for couples in established relationships.</div>
+                        <div class="proj-buttons">
+                          <a class="btn btn-default" href="./projects/dni.html" role="button">Learn more<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="margin-left:10px;"></span></a>
+                      </div>
+                    </div> <!-- END DATE NIGHT IS PROJECT -->
+                    <!-- I WANNA NOM PROJECT -->
+                    <div class="proj-old col-xs-12 col-sm-6">
+                        <div id="nom" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                              <li data-target="#nom" data-slide-to="0" class="active"></li>
+                              <li data-target="#nom" data-slide-to="1"></li>
+                              <li data-target="#nom" data-slide-to="2"></li>
+                              <li data-target="#nom" data-slide-to="3"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                              <div class="item active">
+                                <img src="./images/nom/nom-slide-logo.jpg" alt="Date Night Is...">
+                              </div>
+                              <div class="item">
+                                <img src="./images/nom/nom-slide-bookmarklet.jpg" alt="Date Night Is...">
+                              </div>
+                              <div class="item">
+                                <img src="./images/nom/nom-slide-home.jpg" alt="Date Night Is...">
+                              </div>
+                              <div class="item">
+                                <img src="./images/nom/nom-slide-detail.jpg" alt="Date Night Is...">
+                              </div>
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#nom" role="button" data-slide="prev">
+                              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#nom" role="button" data-slide="next">
+                              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                            </div>
+                        </div>
+                        <!-- PROJECT TITLE -->
+                        <div class="proj-name">I Wanna Nom!</div>
+                        <div class="proj-explainer">A reinvention of the cookbook for the digital space, our platform allowed users to save and share recipes. We grew I Wanna Nom to serve users in the thousands before Pinterest came along and ate our lunch <i>(pun intended)</i>.
+                        </div>
+                        <!-- <div class="proj-buttons">
+                          <a class="btn btn-default" href="./projects/dni.html" role="button">Learn more<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="margin-left:10px;"></span></a>
+                      </div> -->
+                  </div> <!-- END I WANNA NOM PROJECT -->
+                </div> <!-- END ROW -->
+
+
+                    <!-- YKYWAASW & MOMA PROJECT -->
+                      <div class="row"> <!-- ROW -->
+                        <!-- YKYWAASW PROJECT -->
+                        <div class="proj-old col-xs-12 col-sm-6">
+                              <img src="./images/ykywaasw/ykywaasw-slide-1.jpg" class="img-responsive">
                               <!-- PROJECT TITLE -->
-                              <div class="proj-name" style="font-size:24px; line-height:28px;">YKYWAASW...</div>
-                              <div class="proj-explainer" style="font-size: 16px; line-height:22px;">A humorously insightful look into the lives of entrepreneurs.</div>
+                              <div class="proj-name">YKYWAASW...</div>
+                              <div class="proj-explainer">A humorously insightful look into the lives of entrepreneurs.</div>
                               <div class="proj-buttons">
                                 <a class="btn btn-default" href="./projects/ykywaasw.html" role="button">Learn more<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="margin-left:10px;"></span></a>
                             </div>
-                          </div>
-                    </div> <!-- END ROW -->
-
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-
-                    <!-- IICD & MOMA PROJECT -->
-                      <div class="row">
-                          <!-- IICD PROJECT -->
-                          <div class="proj-small col-xs-12 col-sm-6">
-                              <div id="iicd" class="carousel slide" data-ride="carousel" data-interval="false">
-                                  <!-- Indicators -->
-                                  <ol class="carousel-indicators">
-                                    <li data-target="#iicd" data-slide-to="0" class="active"></li>
-                                    <li data-target="#iicd" data-slide-to="1"></li>
-                                    <li data-target="#iicd" data-slide-to="2"></li>
-                                    <li data-target="#iicd" data-slide-to="3"></li>
-                                    <li data-target="#iicd" data-slide-to="4"></li>
-                                    <li data-target="#iicd" data-slide-to="5"></li>
-                                    <li data-target="#iicd" data-slide-to="6"></li>
-                                    <li data-target="#iicd" data-slide-to="7"></li>
-                                    <li data-target="#iicd" data-slide-to="8"></li>
-                                  </ol>
-                                  <!-- Wrapper for slides -->
-                                  <div class="carousel-inner" role="listbox">
-                                    <div class="item active">
-                                      <img src="./images/iicd/iicd-slide-1.jpg" alt="If I Can Dream">
-                                    </div>
-                                    <div class="item">
-                                      <img src="./images/iicd/iicd-slide-2.jpg" alt="If I Can Dream">
-                                    </div>
-                                    <div class="item">
-                                      <img src="./images/iicd/iicd-slide-3.jpg" alt="If I Can Dream">
-                                    </div>
-                                    <div class="item">
-                                      <img src="./images/iicd/iicd-slide-4.jpg" alt="If I Can Dream">
-                                    </div>
-                                    <div class="item">
-                                      <img src="./images/iicd/iicd-slide-5.jpg" alt="If I Can Dream">
-                                    </div>
-                                    <div class="item">
-                                      <img src="./images/iicd/iicd-slide-6.jpg" alt="If I Can Dream">
-                                    </div>
-                                    <div class="item">
-                                      <img src="./images/iicd/iicd-slide-7.jpg" alt="If I Can Dream">
-                                    </div>
-                                    <div class="item">
-                                      <img src="./images/iicd/iicd-slide-8.jpg" alt="If I Can Dream">
-                                    </div>
-                                    <div class="item">
-                                      <img src="./images/iicd/iicd-slide-9.jpg" alt="If I Can Dream">
-                                    </div>
-                                  </div>
-                                  <!-- Controls -->
-                                  <a class="left carousel-control" href="#iicd" role="button" data-slide="prev">
-                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                  </a>
-                                  <a class="right carousel-control" href="#iicd" role="button" data-slide="next">
-                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                  </a>
-                              </div>
-                              <!-- PROJECT TITLE -->
-                              <div class="proj-name">If I Can Dream</div>
-                              <div class="proj-explainer">Reality TV, reinvented for our digital-first world.</div>
-                              <div class="proj-buttons">
-                                <a class="btn btn-default" href="./projects/iicd.html" role="button">Learn more<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="margin-left:10px;"></span></a>
-                            </div>
-                          </div>
+                        </div> <!-- END YKYWAASW -->
 
                           <!-- MOMA PROJECT -->
-                          <div class="col-xs-12 col-sm-6">
+                          <div class="proj-old col-xs-12 col-sm-6">
                               <div id="moma" class="carousel slide" data-ride="carousel" data-interval="false">
                                   <!-- Indicators -->
                                   <ol class="carousel-indicators">
@@ -391,178 +497,12 @@
                               <div class="proj-buttons">
                                 <a class="btn btn-default" href="./projects/moma.html" role="button">Learn more<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="margin-left:10px;"></span></a>
                             </div>
-                          </div>
+                        </div> <!-- END MOMA -->
                       </div> <!-- END ROW -->
+          </div> <!-- END #old-work -->
+    </div> <!-- END CONTAINER -->
+</section> <!-- END section past-work -->
 
-
-              <!-- <a href="./projects/tagasauris.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/tagasauris/tagasauris-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          EXPLORING A.I., SEARCH, &amp; VIDEO
-                      </div>
-                  </div>
-              </a>
-
-              <a href="./projects/disney.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/tagasauris/tv-genome-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          DISNEY'S TV GENOME
-                      </div>
-                  </div>
-              </a>
-
-              <a href="./projects/syt.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/tagasauris/syt-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          SHOPYOUTUBE
-                      </div>
-                  </div>
-              </a>
-
-              <a href="./projects/ykywaasw.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/ykywaasw/ykywaasw-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          YOU KNOW YOU WORK AT A STARTUP WHEN...
-                      </div>
-                  </div>
-              </a>
-
-             <a href="./projects/w42st.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/w42st/w42st-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          W42ST
-                      </div>
-                  </div>
-              </a>
-
-              <a href="./projects/beanstalk.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/beanstalk/beanstalk-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          BEANSTALK LABS
-                      </div>
-                  </div>
-              </a>
-
-              <a href="./projects/imagebrief.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/imagebrief/ib-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          IMAGEBRIEF
-                      </div>
-                  </div>
-              </a>
-
-              <a href="http://twitter.com/amongmany" target="_blank">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/twitter-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          @AMONGMANY
-                      </div>
-                  </div>
-              </a>
-
-              <a href="./projects/dni.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/dni/dni-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          DATE NIGHT IS...
-                      </div>
-                  </div>
-              </a>
-
-              <a href="http://linkedin.com/in/amongmany" target="_blank">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/linkedin-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          I'M LINKED IN
-                      </div>
-                  </div>
-              </a>
-
-              <a href="./projects/moma.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/moma/moma-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          I WENT TO MoMA AND...
-                      </div>
-                  </div>
-              </a>
-
-              <a href="./projects/iicd.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/iicd/iicd-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          IF I CAN DREAM
-                      </div>
-                  </div>
-              </a>
-
-              <a href="./projects/acwis.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/acwis/acwis-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          THE WEIZMANN INSTITUTE OF SCIENCE
-                      </div>
-                  </div>
-              </a>
-
-              <a href="./projects/bartletts.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/bartletts/bartletts-main2.jpg">
-                      </div>
-                      <div class="project-title">
-                          BARTLETT'S FAMILIAR QUOTATIONS
-                      </div>
-                  </div>
-              </a>
-
-              <a href="http://amongmany.com" target="_blank">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/tumblr-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          VISIT MY TUMBLR
-                      </div>
-                  </div>
-              </a> -->
-
-          </div>
-      </div>
-  </section>
 
   <section class="about-self">
       <div class="container">

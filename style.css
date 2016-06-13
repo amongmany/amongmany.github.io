@@ -93,65 +93,22 @@ section.container-fluid {
 }
 section.all-projects {
     background-color: #464e54;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 .all-projects-offset {
     margin-top: -50px;
 }
-.project.col-xs-12.col-sm-6.col-md-4 {
-    padding: 0;
+
+.all-projects h2 {
+    color: #ffffff;
 }
-.project {
-    background: #464e54;
-    border: 0px solid white;
-    height: 320px;
-    overflow: hidden;
-    background-size: cover;
-    padding: 0px;
-    transition: all .5s;
-    -webkit-transition: all .5s;
+.all-projects h3 {
+  color: #ffffff;
+  font: normal 20px/26px 'Istok Web', sans-serif;
+  font-family: 'Istok Web', sans-serif;
+  margin: 10px 0 10px 0;
 }
-.project-image img {
-    position: absolute;
-    width: 100%;
-    min-height: 320px;
-}
-.project:hover img {
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    /*transform:scale(1.2);
-    -webkit-transform:scale(1.2);
-    -moz-transform:scale(1.2);
-    -ms-transform:scale(1.2);
-    -o-transform:scale(1.2); */
-}
-.project-image:after {
-    content:'\A';
-    position:absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    background:rgba(239,57,50,0.8);
-    opacity:0;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-}
-.project:hover .project-image:after, .project:hover .project-title {
-    opacity: 1;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-}
-.project-title {
-    opacity: 0;
-    color: white;
-    font: 700 28px/30px 'Istok Web', sans-serif;
-    font-family: 'Istok Web', sans-serif;
-    text-align: center;
-    position: relative;
-    margin-top: 140px;
-    padding: 10px;
-}
+
 .proj-name {
     color: white;
     font: 700 28px/30px 'Istok Web', sans-serif;
@@ -160,7 +117,7 @@ section.all-projects {
     position: relative;
     text-transform: uppercase;
     margin-top: 20px;
-    padding-left: 10px;
+    padding-left: 0px;
 }
 .proj-explainer {
     color: white;
@@ -169,11 +126,11 @@ section.all-projects {
     text-align: left;
     position: relative;
     margin-top: 5px;
-    padding-left: 10px;
+    padding-left: 0px;
     max-width: 90%;
 }
 .proj-buttons {
-    padding-left: 10px;
+    padding-left: 0px;
     margin-top: 20px;
 }
 .proj-buttons .btn-default {
@@ -187,11 +144,16 @@ section.all-projects {
     text-transform: uppercase;
     padding: 6px 20px;
 }
+.proj-buttons .btn-default:hover {
+    background-color: #c9241d;
+    color: #ffffff;
+}
+
 .proj-more-info {
-    padding-left: 10px;
+    padding-left: 60px;
     margin-top: 40px;
 }
-.proj-more-info .btn-default {
+.tag-proj .btn-default {
     background-image: none;
     border-radius: 0px;
     background-color: #ef3932;
@@ -203,11 +165,58 @@ section.all-projects {
     padding: 6px 20px;
     margin-bottom: 20px;
 }
-.proj-content p {
+.tag-proj .btn-default:hover {
+    background-color: #c9241d;
     color: #ffffff;
 }
-.proj-small {
+.proj-content p {
+    color: #ffffff;
+    line-height: 30px;
+}
+/*.proj-small {
     margin-bottom: 60px;
+}*/
+.tag-proj {
+    margin-bottom: 60px;
+}
+.proj-old {
+    margin-bottom: 60px;
+}
+/* ---------------------------------------------------------SECTION PAST-WORK */
+.past-work {
+    background-color: #535e66;
+    padding: 80px 0 0 0;
+}
+.past-work h2 {
+    color: #ffffff;
+}
+span#old-work-close {
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: -53px;
+}
+span#old-work-close:hover {
+    color: #ef3932;
+}
+.past-work .proj-name {
+    color: white;
+    font: 700 24px/26px 'Istok Web', sans-serif;
+    font-family: 'Istok Web', sans-serif;
+    text-align: left;
+    position: relative;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding-left: 0px;
+}
+.past-work .proj-explainer {
+    color: white;
+    font: 400 18px/24px 'Istok Web', sans-serif;
+    font-family: 'Istok Web', sans-serif;
+    text-align: left;
+    position: relative;
+    margin-top: 5px;
+    padding-left: 0px;
+    max-width: 90%;
 }
 
 /* ---------------------------------------------------------CAROUSEL CSS */
@@ -268,6 +277,44 @@ section.all-projects {
     background-image: none;
 }
 
+#dni .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.3);
+    border: 0px solid #fff;
+}
+#dni .carousel-indicators .active {
+    width: 6px;
+    height: 6px;
+    margin: 1px;
+    background-color: rgba(255,255,255,1);
+}
+#dni .carousel-control.right {
+    background-image: none;
+}
+#dni .carousel-control.left {
+    background-image: none;
+}
+
+#nom .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.3);
+    border: 0px solid #fff;
+}
+#nom .carousel-indicators .active {
+    width: 6px;
+    height: 6px;
+    margin: 1px;
+    background-color: rgba(255,255,255,1);
+}
+#nom .carousel-control.right {
+    background-image: none;
+}
+#nom .carousel-control.left {
+    background-image: none;
+}
+
 #iicd .carousel-indicators li {
     width: 6px;
     height: 6px;
@@ -317,7 +364,7 @@ section.about-self .description-title {
   section p {
     font: normal 16px/24px Helvetica, Arial, sans-serif;
     color: #464e54;
-    max-width: 640px;
+    max-width: 740px;
     }
   section p a {
     font-weight: 700;
