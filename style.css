@@ -333,6 +333,44 @@ span#old-work-close:hover {
 #iicd .carousel-control.left {
     background-image: none;
 }
+
+#tlab .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.3);
+    border: 0px solid #fff;
+}
+#tlab .carousel-indicators .active {
+    width: 6px;
+    height: 6px;
+    margin: 1px;
+    background-color: rgba(255,255,255,1);
+}
+#tlab .carousel-control.right {
+    background-image: none;
+}
+#tlab .carousel-control.left {
+    background-image: none;
+}
+
+#hmplayer .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.3);
+    border: 0px solid #fff;
+}
+#hmplayer .carousel-indicators .active {
+    width: 6px;
+    height: 6px;
+    margin: 1px;
+    background-color: rgba(255,255,255,1);
+}
+#hmplayer .carousel-control.right {
+    background-image: none;
+}
+#hmplayer .carousel-control.left {
+    background-image: none;
+}
 /* ---------------------------------------------------------ABOUT SELF SECTION CSS */
 section.about-self {
     background-color: #f9f9f9;
