@@ -91,36 +91,10 @@ header h3 {
   font-family: 'Istok Web', sans-serif;
   margin: 10px 0 0 0;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 header .intro {
     margin-top: 150px;
     margin-bottom: 250px;
 }
-=======
-header h3 {
-  color: #464e54;
-  font: normal 22px/28px 'Istok Web', sans-serif;
-  font-family: 'Istok Web', sans-serif;
-  margin: 10px 0 0 0;
-}
-header .intro {
-    margin-top: 200px;
-    margin-bottom: 250px;
-}
->>>>>>> origin/master
-=======
-header h3 {
-  color: #464e54;
-  font: normal 22px/28px 'Istok Web', sans-serif;
-  font-family: 'Istok Web', sans-serif;
-  margin: 10px 0 0 0;
-}
-header .intro {
-    margin-top: 200px;
-    margin-bottom: 250px;
-}
->>>>>>> origin/master
 
 section.container-fluid {
     padding-left: 0px;
@@ -136,8 +110,6 @@ section.all-projects {
 
 .all-projects h2 {
     color: #ffffff;
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
 .all-projects h3 {
   color: #ffffff;
@@ -145,24 +117,6 @@ section.all-projects {
   font-family: 'Istok Web', sans-serif;
   margin: 10px 0 10px 0;
 }
-=======
-}
-.all-projects h3 {
-  color: #ffffff;
-  font: normal 20px/26px 'Istok Web', sans-serif;
-  font-family: 'Istok Web', sans-serif;
-  margin: 10px 0 10px 0;
-}
->>>>>>> origin/master
-=======
-}
-.all-projects h3 {
-  color: #ffffff;
-  font: normal 20px/26px 'Istok Web', sans-serif;
-  font-family: 'Istok Web', sans-serif;
-  margin: 10px 0 10px 0;
-}
->>>>>>> origin/master
 
 .proj-name {
     color: white;
@@ -179,8 +133,6 @@ section.all-projects {
     font: 400 24px/28px 'Istok Web', sans-serif;
     font-family: 'Istok Web', sans-serif;
     text-align: left;
-<<<<<<< HEAD
-<<<<<<< HEAD
     position: relative;
     margin-top: 5px;
     padding-left: 0px;
@@ -271,351 +223,6 @@ span#old-work-close:hover {
     font: 400 18px/24px 'Istok Web', sans-serif;
     font-family: 'Istok Web', sans-serif;
     text-align: left;
-=======
->>>>>>> origin/master
-    position: relative;
-    margin-top: 5px;
-    padding-left: 0px;
-    max-width: 90%;
-<<<<<<< HEAD
-}
-
-/* ---------------------------------------------------------CAROUSEL CSS */
-#tagasauris .carousel-indicators li {
-    width: 6px;
-    height: 6px;
-    background-color: rgba(255,255,255,0.3);
-    border: 0px solid #fff;
-}
-#tagasauris .carousel-indicators .active {
-    width: 6px;
-    height: 6px;
-    margin: 1px;
-    background-color: rgba(255,255,255,1);
-}
-#tagasauris .carousel-control.right {
-    background-image: none;
-}
-#tagasauris .carousel-control.left {
-    background-image: none;
-}
-
-=======
-}
-.proj-buttons {
-    padding-left: 0px;
-    margin-top: 20px;
-}
-.proj-buttons .btn-default {
-    background-image: none;
-    border-radius: 0px;
-    background-color: #ef3932;
-    color: #ffffff;
-    text-shadow: none;
-    border: none;
-    font: 400 16px/16px 'Istok Web', sans-serif;
-    text-transform: uppercase;
-    padding: 6px 20px;
-}
-.proj-buttons .btn-default:hover {
-    background-color: #c9241d;
-    color: #ffffff;
-}
-
-.proj-more-info {
-    padding-left: 60px;
-    margin-top: 40px;
-}
-.tag-proj .btn-default {
-    background-image: none;
-    border-radius: 0px;
-    background-color: #ef3932;
-    color: #ffffff;
-    text-shadow: none;
-    border: none;
-    font: 400 16px/16px 'Istok Web', sans-serif;
-    text-transform: uppercase;
-    padding: 6px 20px;
-    margin-bottom: 20px;
-}
-.tag-proj .btn-default:hover {
-    background-color: #c9241d;
-    color: #ffffff;
-}
-.proj-content p {
-    color: #ffffff;
-    line-height: 30px;
-}
-/*.proj-small {
-    margin-bottom: 60px;
-}*/
-.tag-proj {
-    margin-bottom: 60px;
-}
-.proj-old {
-    margin-bottom: 60px;
-}
-/* ---------------------------------------------------------SECTION PAST-WORK */
-.past-work {
-    background-color: #535e66;
-    padding: 80px 0 0 0;
-}
-.past-work h2 {
-    color: #ffffff;
-}
-span#old-work-close {
-    font-size: 30px;
-    color: #ffffff;
-    margin-top: -53px;
-}
-span#old-work-close:hover {
-    color: #ef3932;
-}
-.past-work .proj-name {
-    color: white;
-    font: 700 24px/26px 'Istok Web', sans-serif;
-    font-family: 'Istok Web', sans-serif;
-    text-align: left;
-    position: relative;
-    text-transform: uppercase;
-    margin-top: 20px;
-    padding-left: 0px;
-}
-.past-work .proj-explainer {
-    color: white;
-    font: 400 18px/24px 'Istok Web', sans-serif;
-    font-family: 'Istok Web', sans-serif;
-    text-align: left;
-    position: relative;
-=======
-    position: relative;
->>>>>>> origin/master
-    margin-top: 5px;
-    padding-left: 0px;
-    max-width: 90%;
-}
-<<<<<<< HEAD
-
-/* ---------------------------------------------------------CAROUSEL CSS */
-#tagasauris .carousel-indicators li {
-    width: 6px;
-    height: 6px;
-    background-color: rgba(255,255,255,0.3);
-    border: 0px solid #fff;
-}
-#tagasauris .carousel-indicators .active {
-    width: 6px;
-    height: 6px;
-    margin: 1px;
-    background-color: rgba(255,255,255,1);
-}
-#tagasauris .carousel-control.right {
-    background-image: none;
-}
-#tagasauris .carousel-control.left {
-    background-image: none;
-}
-
->>>>>>> origin/master
-#imagebrief .carousel-indicators li {
-    width: 6px;
-    height: 6px;
-    background-color: rgba(255,255,255,0.3);
-    border: 0px solid #fff;
-}
-#imagebrief .carousel-indicators .active {
-    width: 6px;
-    height: 6px;
-    margin: 1px;
-    background-color: rgba(255,255,255,1);
-}
-#imagebrief .carousel-control.right {
-    background-image: none;
-}
-#imagebrief .carousel-control.left {
-    background-image: none;
-}
-
-#moma .carousel-indicators li {
-    width: 6px;
-    height: 6px;
-    background-color: rgba(255,255,255,0.3);
-    border: 0px solid #fff;
-}
-#moma .carousel-indicators .active {
-    width: 6px;
-    height: 6px;
-    margin: 1px;
-    background-color: rgba(255,255,255,1);
-}
-#moma .carousel-control.right {
-    background-image: none;
-}
-#moma .carousel-control.left {
-    background-image: none;
-}
-
-#dni .carousel-indicators li {
-    width: 6px;
-    height: 6px;
-    background-color: rgba(255,255,255,0.3);
-    border: 0px solid #fff;
-}
-#dni .carousel-indicators .active {
-    width: 6px;
-    height: 6px;
-    margin: 1px;
-    background-color: rgba(255,255,255,1);
-}
-#dni .carousel-control.right {
-    background-image: none;
-}
-#dni .carousel-control.left {
-    background-image: none;
-}
-
-#nom .carousel-indicators li {
-    width: 6px;
-    height: 6px;
-    background-color: rgba(255,255,255,0.3);
-    border: 0px solid #fff;
-}
-#nom .carousel-indicators .active {
-    width: 6px;
-    height: 6px;
-    margin: 1px;
-    background-color: rgba(255,255,255,1);
-}
-#nom .carousel-control.right {
-    background-image: none;
-}
-#nom .carousel-control.left {
-    background-image: none;
-}
-
-#iicd .carousel-indicators li {
-    width: 6px;
-    height: 6px;
-    background-color: rgba(255,255,255,0.3);
-    border: 0px solid #fff;
-}
-#iicd .carousel-indicators .active {
-    width: 6px;
-    height: 6px;
-    margin: 1px;
-    background-color: rgba(255,255,255,1);
-}
-#iicd .carousel-control.right {
-    background-image: none;
-}
-#iicd .carousel-control.left {
-    background-image: none;
-}
-
-#tlab .carousel-indicators li {
-    width: 6px;
-    height: 6px;
-    background-color: rgba(255,255,255,0.3);
-    border: 0px solid #fff;
-}
-#tlab .carousel-indicators .active {
-    width: 6px;
-    height: 6px;
-    margin: 1px;
-    background-color: rgba(255,255,255,1);
-}
-#tlab .carousel-control.right {
-    background-image: none;
-}
-#tlab .carousel-control.left {
-    background-image: none;
-}
-
-=======
-.proj-buttons {
-    padding-left: 0px;
-    margin-top: 20px;
-}
-.proj-buttons .btn-default {
-    background-image: none;
-    border-radius: 0px;
-    background-color: #ef3932;
-    color: #ffffff;
-    text-shadow: none;
-    border: none;
-    font: 400 16px/16px 'Istok Web', sans-serif;
-    text-transform: uppercase;
-    padding: 6px 20px;
-}
-.proj-buttons .btn-default:hover {
-    background-color: #c9241d;
-    color: #ffffff;
-}
-
-.proj-more-info {
-    padding-left: 60px;
-    margin-top: 40px;
-}
-.tag-proj .btn-default {
-    background-image: none;
-    border-radius: 0px;
-    background-color: #ef3932;
-    color: #ffffff;
-    text-shadow: none;
-    border: none;
-    font: 400 16px/16px 'Istok Web', sans-serif;
-    text-transform: uppercase;
-    padding: 6px 20px;
-    margin-bottom: 20px;
-}
-.tag-proj .btn-default:hover {
-    background-color: #c9241d;
-    color: #ffffff;
-}
-.proj-content p {
-    color: #ffffff;
-    line-height: 30px;
-}
-/*.proj-small {
-    margin-bottom: 60px;
-}*/
-.tag-proj {
-    margin-bottom: 60px;
-}
-.proj-old {
-    margin-bottom: 60px;
-}
-/* ---------------------------------------------------------SECTION PAST-WORK */
-.past-work {
-    background-color: #535e66;
-    padding: 80px 0 0 0;
-}
-.past-work h2 {
-    color: #ffffff;
-}
-span#old-work-close {
-    font-size: 30px;
-    color: #ffffff;
-    margin-top: -53px;
-}
-span#old-work-close:hover {
-    color: #ef3932;
-}
-.past-work .proj-name {
-    color: white;
-    font: 700 24px/26px 'Istok Web', sans-serif;
-    font-family: 'Istok Web', sans-serif;
-    text-align: left;
-    position: relative;
-    text-transform: uppercase;
-    margin-top: 20px;
-    padding-left: 0px;
-}
-.past-work .proj-explainer {
-    color: white;
-    font: 400 18px/24px 'Istok Web', sans-serif;
-    font-family: 'Istok Web', sans-serif;
-    text-align: left;
     position: relative;
     margin-top: 5px;
     padding-left: 0px;
@@ -756,7 +363,6 @@ span#old-work-close:hover {
     background-image: none;
 }
 
->>>>>>> origin/master
 #hmplayer .carousel-indicators li {
     width: 6px;
     height: 6px;
