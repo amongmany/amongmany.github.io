@@ -81,7 +81,7 @@ header h1 {
 }
 header h2 {
   color: #464e54;
-  font: normal 22px/28px 'Istok Web', sans-serif;
+  font: normal 18px/24px 'Istok Web', sans-serif;
   font-family: 'Istok Web', sans-serif;
   margin: 10px 0 0 0;
 }
@@ -92,7 +92,7 @@ header h3 {
   margin: 10px 0 0 0;
 }
 header .intro {
-    margin-top: 200px;
+    margin-top: 150px;
     margin-bottom: 250px;
 }
 
@@ -159,7 +159,7 @@ section.all-projects {
 }
 
 .proj-more-info {
-    padding-left: 60px;
+    padding-left: 0px;
     margin-top: 40px;
 }
 .tag-proj .btn-default {
@@ -172,7 +172,7 @@ section.all-projects {
     font: 400 16px/16px 'Istok Web', sans-serif;
     text-transform: uppercase;
     padding: 6px 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 .tag-proj .btn-default:hover {
     background-color: #c9241d;
@@ -198,6 +198,7 @@ section.all-projects {
 }
 .past-work h2 {
     color: #ffffff;
+    font: normal 24px/30px 'Istok Web', sans-serif;
 }
 span#old-work-close {
     font-size: 30px;
@@ -577,12 +578,14 @@ section.project-details {
         margin-top: 208px;
         margin-bottom: 572px;
     }
-    section.blockquote.twitter-blockquote p {
-      font: 700 30px/48px 'Istok Web', sans-serif;
-      text-align: left;
-      position: static;
-      height: auto;
-      word-break: break-word;
-      color: white;
+    .proj-more-info {
+        padding-left: 60px;
+        margin-top: 40px;
+    }
+    .tag-proj .btn-default {
+        margin-bottom: 20px;
+    }
+    .past-work h2 {
+        font: normal 28px/34px 'Istok Web', sans-serif;
     }
 }
