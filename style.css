@@ -4,6 +4,14 @@
 @-o-viewport        { width: device-width; }
 @viewport           { width: device-width; }
 
+.available {
+    text-align: center;
+    color: #fff;
+    background-color: #64b450;
+    padding-top: 7px;
+    height: 40px;
+    font: normal 20px/25px 'Istok Web', sans-serif;
+}
 .social-links-header {
     background: #fafafa;
     border-bottom: 0px solid #d7d7d7;
@@ -11,11 +19,12 @@
 .social-links-header .social-links {
     float: right;
     display: block;
+    margin: 10px 15px 0 0;
+
 }
 .social-links-header .social-links li {
   display: block;
   float: left;
-  margin-right: 0px;
   width: auto;
 }
 .social-links li a {
@@ -72,21 +81,33 @@ header h1 {
 }
 header h2 {
   color: #464e54;
+  font: normal 18px/24px 'Istok Web', sans-serif;
+  font-family: 'Istok Web', sans-serif;
+  margin: 10px 0 0 0;
+}
+header h3 {
+  color: #464e54;
   font: normal 22px/28px 'Istok Web', sans-serif;
   font-family: 'Istok Web', sans-serif;
   margin: 10px 0 0 0;
 }
-.intro {
-    margin-top: 70px;
+<<<<<<< HEAD
+header .intro {
+    margin-top: 150px;
     margin-bottom: 250px;
 }
-ul#cyclelist li {
-    opacity:0;
-    position:absolute;
-    list-style: none;
-    margin-left: -40px;
+=======
+header h3 {
+  color: #464e54;
+  font: normal 22px/28px 'Istok Web', sans-serif;
+  font-family: 'Istok Web', sans-serif;
+  margin: 10px 0 0 0;
 }
-
+header .intro {
+    margin-top: 200px;
+    margin-bottom: 250px;
+}
+>>>>>>> origin/master
 
 section.container-fluid {
     padding-left: 0px;
@@ -94,67 +115,413 @@ section.container-fluid {
 }
 section.all-projects {
     background-color: #464e54;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 .all-projects-offset {
-    margin-top: -100px;
+    margin-top: -50px;
 }
-.project.col-xs-12.col-sm-6.col-md-4 {
-    padding: 0;
+
+.all-projects h2 {
+    color: #ffffff;
+<<<<<<< HEAD
 }
-.project {
-    background: #464e54;
-    border: 0px solid white;
-    height: 320px;
-    overflow: hidden;
-    background-size: cover;
-    padding: 0px;
-    transition: all .5s;
-    -webkit-transition: all .5s;
+.all-projects h3 {
+  color: #ffffff;
+  font: normal 20px/26px 'Istok Web', sans-serif;
+  font-family: 'Istok Web', sans-serif;
+  margin: 10px 0 10px 0;
 }
-.project-image img {
-    position: absolute;
-    width: 100%;
-    min-height: 320px;
+=======
 }
-.project:hover img {
-    transform:scale(1.2);
-    -webkit-transform:scale(1.2); /* Safari and Chrome */
-    -moz-transform:scale(1.2); /* Firefox */
-    -ms-transform:scale(1.2); /* IE 9 */
-    -o-transform:scale(1.2); /* Opera */
-    transition: all .5s;
-    -webkit-transition: all .5s;
+.all-projects h3 {
+  color: #ffffff;
+  font: normal 20px/26px 'Istok Web', sans-serif;
+  font-family: 'Istok Web', sans-serif;
+  margin: 10px 0 10px 0;
 }
-.project-image:after {
-    content:'\A';
-    position:absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    background:rgba(239,57,50,0.8);
-    opacity:0;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-}
-.project:hover .project-image:after, .project:hover .project-title {
-    opacity: 1;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-}
-.project-title {
-    opacity: 0;
+>>>>>>> origin/master
+
+.proj-name {
     color: white;
     font: 700 28px/30px 'Istok Web', sans-serif;
     font-family: 'Istok Web', sans-serif;
-    text-align: center;
+    text-align: left;
     position: relative;
-    margin-top: 140px;
-    padding: 10px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding-left: 0px;
+}
+.proj-explainer {
+    color: white;
+    font: 400 24px/28px 'Istok Web', sans-serif;
+    font-family: 'Istok Web', sans-serif;
+    text-align: left;
+<<<<<<< HEAD
+    position: relative;
+    margin-top: 5px;
+    padding-left: 0px;
+    max-width: 90%;
+}
+.proj-buttons {
+    padding-left: 0px;
+    margin-top: 20px;
+}
+.proj-buttons .btn-default {
+    background-image: none;
+    border-radius: 0px;
+    background-color: #ef3932;
+    color: #ffffff;
+    text-shadow: none;
+    border: none;
+    font: 400 16px/16px 'Istok Web', sans-serif;
+    text-transform: uppercase;
+    padding: 6px 20px;
+}
+.proj-buttons .btn-default:hover {
+    background-color: #c9241d;
+    color: #ffffff;
 }
 
+.proj-more-info {
+    padding-left: 0px;
+    margin-top: 40px;
+}
+.tag-proj .btn-default {
+    background-image: none;
+    border-radius: 0px;
+    background-color: #ef3932;
+    color: #ffffff;
+    text-shadow: none;
+    border: none;
+    font: 400 16px/16px 'Istok Web', sans-serif;
+    text-transform: uppercase;
+    padding: 6px 20px;
+    margin-bottom: 0px;
+}
+.tag-proj .btn-default:hover {
+    background-color: #c9241d;
+    color: #ffffff;
+}
+.proj-content p {
+    color: #ffffff;
+    line-height: 30px;
+}
+/*.proj-small {
+    margin-bottom: 60px;
+}*/
+.tag-proj {
+    margin-bottom: 60px;
+}
+.proj-old {
+    margin-bottom: 60px;
+}
+/* ---------------------------------------------------------SECTION PAST-WORK */
+.past-work {
+    background-color: #535e66;
+    padding: 80px 0 0 0;
+}
+.past-work h2 {
+    color: #ffffff;
+    font: normal 24px/30px 'Istok Web', sans-serif;
+}
+span#old-work-close {
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: -53px;
+}
+span#old-work-close:hover {
+    color: #ef3932;
+}
+.past-work .proj-name {
+    color: white;
+    font: 700 24px/26px 'Istok Web', sans-serif;
+    font-family: 'Istok Web', sans-serif;
+    text-align: left;
+    position: relative;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding-left: 0px;
+}
+.past-work .proj-explainer {
+    color: white;
+    font: 400 18px/24px 'Istok Web', sans-serif;
+    font-family: 'Istok Web', sans-serif;
+    text-align: left;
+=======
+>>>>>>> origin/master
+    position: relative;
+    margin-top: 5px;
+    padding-left: 0px;
+    max-width: 90%;
+<<<<<<< HEAD
+}
 
+/* ---------------------------------------------------------CAROUSEL CSS */
+#tagasauris .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.3);
+    border: 0px solid #fff;
+}
+#tagasauris .carousel-indicators .active {
+    width: 6px;
+    height: 6px;
+    margin: 1px;
+    background-color: rgba(255,255,255,1);
+}
+#tagasauris .carousel-control.right {
+    background-image: none;
+}
+#tagasauris .carousel-control.left {
+    background-image: none;
+}
+
+=======
+}
+.proj-buttons {
+    padding-left: 0px;
+    margin-top: 20px;
+}
+.proj-buttons .btn-default {
+    background-image: none;
+    border-radius: 0px;
+    background-color: #ef3932;
+    color: #ffffff;
+    text-shadow: none;
+    border: none;
+    font: 400 16px/16px 'Istok Web', sans-serif;
+    text-transform: uppercase;
+    padding: 6px 20px;
+}
+.proj-buttons .btn-default:hover {
+    background-color: #c9241d;
+    color: #ffffff;
+}
+
+.proj-more-info {
+    padding-left: 60px;
+    margin-top: 40px;
+}
+.tag-proj .btn-default {
+    background-image: none;
+    border-radius: 0px;
+    background-color: #ef3932;
+    color: #ffffff;
+    text-shadow: none;
+    border: none;
+    font: 400 16px/16px 'Istok Web', sans-serif;
+    text-transform: uppercase;
+    padding: 6px 20px;
+    margin-bottom: 20px;
+}
+.tag-proj .btn-default:hover {
+    background-color: #c9241d;
+    color: #ffffff;
+}
+.proj-content p {
+    color: #ffffff;
+    line-height: 30px;
+}
+/*.proj-small {
+    margin-bottom: 60px;
+}*/
+.tag-proj {
+    margin-bottom: 60px;
+}
+.proj-old {
+    margin-bottom: 60px;
+}
+/* ---------------------------------------------------------SECTION PAST-WORK */
+.past-work {
+    background-color: #535e66;
+    padding: 80px 0 0 0;
+}
+.past-work h2 {
+    color: #ffffff;
+}
+span#old-work-close {
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: -53px;
+}
+span#old-work-close:hover {
+    color: #ef3932;
+}
+.past-work .proj-name {
+    color: white;
+    font: 700 24px/26px 'Istok Web', sans-serif;
+    font-family: 'Istok Web', sans-serif;
+    text-align: left;
+    position: relative;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding-left: 0px;
+}
+.past-work .proj-explainer {
+    color: white;
+    font: 400 18px/24px 'Istok Web', sans-serif;
+    font-family: 'Istok Web', sans-serif;
+    text-align: left;
+    position: relative;
+    margin-top: 5px;
+    padding-left: 0px;
+    max-width: 90%;
+}
+
+/* ---------------------------------------------------------CAROUSEL CSS */
+#tagasauris .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.3);
+    border: 0px solid #fff;
+}
+#tagasauris .carousel-indicators .active {
+    width: 6px;
+    height: 6px;
+    margin: 1px;
+    background-color: rgba(255,255,255,1);
+}
+#tagasauris .carousel-control.right {
+    background-image: none;
+}
+#tagasauris .carousel-control.left {
+    background-image: none;
+}
+
+>>>>>>> origin/master
+#imagebrief .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.3);
+    border: 0px solid #fff;
+}
+#imagebrief .carousel-indicators .active {
+    width: 6px;
+    height: 6px;
+    margin: 1px;
+    background-color: rgba(255,255,255,1);
+}
+#imagebrief .carousel-control.right {
+    background-image: none;
+}
+#imagebrief .carousel-control.left {
+    background-image: none;
+}
+
+#moma .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.3);
+    border: 0px solid #fff;
+}
+#moma .carousel-indicators .active {
+    width: 6px;
+    height: 6px;
+    margin: 1px;
+    background-color: rgba(255,255,255,1);
+}
+#moma .carousel-control.right {
+    background-image: none;
+}
+#moma .carousel-control.left {
+    background-image: none;
+}
+
+#dni .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.3);
+    border: 0px solid #fff;
+}
+#dni .carousel-indicators .active {
+    width: 6px;
+    height: 6px;
+    margin: 1px;
+    background-color: rgba(255,255,255,1);
+}
+#dni .carousel-control.right {
+    background-image: none;
+}
+#dni .carousel-control.left {
+    background-image: none;
+}
+
+#nom .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.3);
+    border: 0px solid #fff;
+}
+#nom .carousel-indicators .active {
+    width: 6px;
+    height: 6px;
+    margin: 1px;
+    background-color: rgba(255,255,255,1);
+}
+#nom .carousel-control.right {
+    background-image: none;
+}
+#nom .carousel-control.left {
+    background-image: none;
+}
+
+#iicd .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.3);
+    border: 0px solid #fff;
+}
+#iicd .carousel-indicators .active {
+    width: 6px;
+    height: 6px;
+    margin: 1px;
+    background-color: rgba(255,255,255,1);
+}
+#iicd .carousel-control.right {
+    background-image: none;
+}
+#iicd .carousel-control.left {
+    background-image: none;
+}
+
+#tlab .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.3);
+    border: 0px solid #fff;
+}
+#tlab .carousel-indicators .active {
+    width: 6px;
+    height: 6px;
+    margin: 1px;
+    background-color: rgba(255,255,255,1);
+}
+#tlab .carousel-control.right {
+    background-image: none;
+}
+#tlab .carousel-control.left {
+    background-image: none;
+}
+
+#hmplayer .carousel-indicators li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255,255,255,0.3);
+    border: 0px solid #fff;
+}
+#hmplayer .carousel-indicators .active {
+    width: 6px;
+    height: 6px;
+    margin: 1px;
+    background-color: rgba(255,255,255,1);
+}
+#hmplayer .carousel-control.right {
+    background-image: none;
+}
+#hmplayer .carousel-control.left {
+    background-image: none;
+}
+/* ---------------------------------------------------------ABOUT SELF SECTION CSS */
 section.about-self {
     background-color: #f9f9f9;
 }
@@ -185,7 +552,7 @@ section.about-self .description-title {
   section p {
     font: normal 16px/24px Helvetica, Arial, sans-serif;
     color: #464e54;
-    max-width: 640px;
+    max-width: 740px;
     }
   section p a {
     font-weight: 700;
@@ -236,7 +603,7 @@ section.about-self .description-title {
     background: #ef3932;
   }
 
-  section li:before {
+  section.about-self li:before {
        content: "";
        border-color: transparent #ef3932;
        border-style: solid;
@@ -249,53 +616,6 @@ section.about-self .description-title {
       position: relative;
   }
 
-
-  /* ---------------------------------------------------------TWITTER CSS */
-  section.blockquote.twitter-blockquote {
-    background: url('http://static.tumblr.com/jn9hegd/vDGn7g3ca/twitter-bird.png') no-repeat #464e54;
-    background-size: 250px;
-    background-position: center;
-    height: auto;
-    padding: 75px 0;
-  }
-  section.blockquote.twitter-blockquote p {
-    font: 700 22px/36px 'Istok Web', sans-serif;
-    text-align: left;
-    position: static;
-    height: auto;
-    word-break: break-word;
-    color: white;
-  }
-  section.blockquote.twitter-blockquote cite {
-    font: 700 18px/28px 'Istok Web', sans-serif;
-    font-family: 'Istok Web', sans-serif;
-    text-align: right;
-    color: white;
-    display: block;
-    width: 100%;
-    margin-top: 10px;
-  }
-  section.blockquote.twitter-blockquote a {
-    color: white;
-    border-bottom-color: white;
-  }
-  section.blockquote.twitter-blockquote ul li {
-  list-style:none;
-  overflow:hidden;
-}
-  @media (min-width: 992px) {
-    section.blockquote.twitter-blockquote {
-      padding: 100px 0 90px;
-    }
-    section.blockquote.twitter-blockquote blockquote {
-      font-size: 33px;
-      line-height: 50px;
-    }
-    section.blockquote.twitter-blockquote cite {
-      font-size: 22px;
-      line-height: 50px;
-    }
-}
 
 /* ---------------------------------------------------------FOOTER CSS */
   footer {
@@ -380,6 +700,12 @@ section.project-details {
     }
     header h2 {
       color: #464e54;
+      font: normal 24px/32px 'Istok Web', sans-serif;
+      font-family: 'Istok Web', sans-serif;
+      margin: 10px 0 0 0;
+    }
+    header h3 {
+      color: #464e54;
       font: normal 30px/34px 'Istok Web', sans-serif;
       font-family: 'Istok Web', sans-serif;
       margin: 10px 0 0 0;
@@ -392,12 +718,14 @@ section.project-details {
         margin-top: 208px;
         margin-bottom: 572px;
     }
-    section.blockquote.twitter-blockquote p {
-      font: 700 30px/48px 'Istok Web', sans-serif;
-      text-align: left;
-      position: static;
-      height: auto;
-      word-break: break-word;
-      color: white;
+    .proj-more-info {
+        padding-left: 60px;
+        margin-top: 40px;
+    }
+    .tag-proj .btn-default {
+        margin-bottom: 20px;
+    }
+    .past-work h2 {
+        font: normal 28px/34px 'Istok Web', sans-serif;
     }
 }
