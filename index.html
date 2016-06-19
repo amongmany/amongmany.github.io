@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Hi, I'm Danny.</title>
+    <title>Hello, I'm Danny.</title>
     <html lang="en-US">
     <head profile="http://www.w3.org/2005/10/profile">
     <link rel="icon"
@@ -8,7 +8,7 @@
           href="./images/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 	<!-- BOOTSTRAP CSS LINKS -->
 	<!-- Latest compiled and minified CSS -->
@@ -32,38 +32,23 @@
     document.querySelector('head').appendChild(msViewportStyle)
     }
 
-
-    var config1 = {
-      "id": '618091741141463041',
-      "domId": 'twitter_container',
-      "maxTweets": 1,
-      "enableLinks": true,
-      "showTime": false,
-      "showUser": false,
-      "showRetweet": false,
-      "showInteraction": false,
-    };
-    twitterFetcher.fetch(config1);
-
-    $(document).ready(function() {
-	 var j = 0;
-	 var delay = 2500; //millisecond delay between cycles
-	 function cycleThru(){
-	         var jmax = $("ul#cyclelist li").length -1;
-	         $("ul#cyclelist li:eq(" + j + ")")
-	                 .animate({"opacity" : "1"} ,400)
-	                 .animate({"opacity" : "1"}, delay)
-	                 .animate({"opacity" : "0"}, 400, function(){
-	                         (j == jmax) ? j=0 : j++;
-	                         cycleThru();
-	                 });
-	         };
-	 cycleThru();
-     });
+    $(document).ready(function(){
+        $("#old-work-close").click(function(){
+            $("#past-work").slideUp(300);
+            $("#show-past-work").show();
+        });
+        $("#show-past-work").click(function(){
+            $("#past-work").slideDown(300);
+            $("#show-past-work").hide();
+        });
+    });
 </script>
 
 <body>
     <nav>
+     <div class="available">
+         <p><span class="glyphicon glyphicon-ok-circle" aria-hidden="true" style="top:3px;"></span> I am currently <strong>AVAILABLE</strong> for projects.</p>
+     </div>
      <div class="social-links-header">
          <ul class="social-links">
              <li class="linkedin">
@@ -96,221 +81,532 @@
     </nav>
 
   <header class="container-fluid">
-    <div class="intro col-xs-12 col-sm-10 col-sm-offset-1">
-      <h1> Hello, I'm Danny.<br />
-          <ul id="cyclelist">
-              <li>I'm a product manager.</li>
-              <li>I'm a UX &amp; visual designer.</li>
-              <li>I'm a product designer.</li>
-              <li>I'm an entrepreneur.</li>
-              <li>I write a bit of code.</li>
-          </ul></h1>
+    <div class="intro col-xs-12 col-sm-8 col-sm-offset-2">
+      <h1> Hello, I'm Danny.</h1>
+      <!-- <h2>I create products that solve business problems and surprise &amp; delight people.</h2>
+      <h2>I design products that surprise &amp; delight.</h2>
+      <h2>I'm a product designer &amp; strategist. Lately I've been focused on the intersection of A.I., search, and video.</h2> -->
+      <h2>I design products that surprise &amp; delight.<br />Recently focused on the intersection of AI, search, &amp; video.</h2>
     </div>
   </header>
+
 
   <section class="all-projects">
       <div class="container">
           <div class="all-projects-offset">
-              <a href="./projects/tagasauris.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/tagasauris/tagasauris-main.jpg">
+            <!-- TAGASAURIS PROJECT -->
+              <div class="row">
+                  <div class="col-xs-12">
+                      <div id="tagasauris" class="carousel slide" data-ride="carousel" data-interval="false">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#tagasauris" data-slide-to="0" class="active"></li>
+                            <li data-target="#tagasauris" data-slide-to="1"></li>
+                            <li data-target="#tagasauris" data-slide-to="2"></li>
+                            <li data-target="#tagasauris" data-slide-to="3"></li>
+                            <li data-target="#tagasauris" data-slide-to="4"></li>
+                            <li data-target="#tagasauris" data-slide-to="5"></li>
+                            <li data-target="#tagasauris" data-slide-to="6"></li>
+                          </ol>
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                              <img src="./images/tagasauris/tag-slide-logo.jpg" alt="tagasauris">
+                            </div>
+                            <div class="item">
+                              <img src="./images/tagasauris/tag-slide-bond.jpg" alt="Video Decomposition">
+                            </div>
+                            <div class="item">
+                              <img src="./images/tagasauris/tag-slide-gt.jpg" alt="Video Search">
+                            </div>
+                            <div class="item">
+                              <img src="./images/tagasauris/tag-slide-mobile.jpg" alt="Video Search">
+                            </div>
+                            <div class="item">
+                              <img src="./images/tagasauris/tag-slide-nashville.jpg" alt="Disney TV Genome">
+                            </div>
+                            <div class="item">
+                              <img src="./images/tagasauris/tag-slide-syt.jpg" alt="ShopYouTube">
+                            </div>
+                            <div class="item">
+                              <img src="./images/tagasauris/tag-slide-hyperted.jpg" alt="Hyperted">
+                            </div>
+                          </div>
+                          <!-- Controls -->
+                          <a class="left carousel-control" href="#tagasauris" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control" href="#tagasauris" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
                       </div>
-                      <div class="project-title">
-                          TAGASAURIS
-                      </div>
-                  </div>
-              </a>
-              <a href="./projects/disney.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/tagasauris/tv-genome-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          DISNEY'S TV GENOME
-                      </div>
-                  </div>
-              </a>
-              <a href="./projects/syt.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/tagasauris/syt-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          SHOPYOUTUBE
-                      </div>
-                  </div>
-              </a>
-              <a href="./projects/ykywaasw.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/ykywaasw/ykywaasw-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          YOU KNOW YOU WORK AT A STARTUP WHEN...
-                      </div>
-                  </div>
-              </a>
-             <!-- <a href="./projects/w42st.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/w42st/w42st-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          W42ST
-                      </div>
-                  </div>
-              </a>-->
-              <a href="./projects/beanstalk.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/beanstalk/beanstalk-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          BEANSTALK LABS
-                      </div>
-                  </div>
-              </a>
-              <a href="./projects/imagebrief.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/imagebrief/ib-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          IMAGEBRIEF
-                      </div>
-                  </div>
-              </a>
-              <a href="http://twitter.com/amongmany" target="_blank">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/twitter-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          @AMONGMANY
-                      </div>
-                  </div>
-              </a>
-              <a href="./projects/dni.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/dni/dni-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          DATE NIGHT IS...
-                      </div>
-                  </div>
-              </a>
-              <a href="http://linkedin.com/in/amongmany" target="_blank">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/linkedin-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          I'M LINKED IN
-                      </div>
-                  </div>
-              </a>
-              <a href="./projects/moma.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/moma/moma-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          I WENT TO MoMA AND...
-                      </div>
-                  </div>
-              </a>
-              <a href="./projects/iicd.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/iicd/iicd-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          IF I CAN DREAM
-                      </div>
-                  </div>
-              </a>
-              <a href="./projects/acwis.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/acwis/acwis-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          THE WEIZMANN INSTITUTE OF SCIENCE
-                      </div>
-                  </div>
-              </a>
-              <a href="./projects/bartletts.html">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/bartletts/bartletts-main2.jpg">
-                      </div>
-                      <div class="project-title">
-                          BARTLETT'S FAMILIAR QUOTATIONS
-                      </div>
-                  </div>
-              </a>
-              <a href="http://amongmany.com" target="_blank">
-                  <div class="project col-xs-12 col-sm-6 col-md-4">
-                      <div class="project-image">
-                          <img src="./images/tumblr-main.jpg">
-                      </div>
-                      <div class="project-title">
-                          VISIT MY TUMBLR
-                      </div>
-                  </div>
-              </a>
+                      <!-- PROJECT TITLE -->
+                      <div class="proj-more-info" id="tag-more-content">
+                          <div class="proj-name">Tagasauris:</div>
+                          <div class="proj-explainer">Exploring the intersection of artificial intelligence, search, and video.</div>
+                          <!-- <div class="proj-buttons">
+                            <a class="btn btn-default" id="tag-learn-more" role="button">Learn more<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="margin-left:10px;"></span></a>
+                            <span class="pull-right glyphicon glyphicon-remove" id="tag-more-content-close"aria-hidden="true" style="display:none; color:#ffffff; font-size:20px;"></span>
+                        </div> -->
+                        <br />
 
-          </div>
-      </div>
-  </section>
+                        <div class="proj-content">
+                            <p><strong>Videos online are black boxes.</strong><br />
+                                It's never been possible to <i>search inside video</i> to determine what's happening at any given moment. Search engines don't analyze videos; they catalog the text surrounding a video <i>(titles, descriptions, comments, etc.)</i> in order to find potentially relevant content. A search returns full-length videos, forcing a viewer to watch the whole thing &mdash; whether it's one minute or one hour &mdash; to find the relevant moments. </p><br />
+
+                            <p><strong>Until now...</strong><br />
+                                Tagasauris uses AI <i>(a combination of Computer Vision, Machine Learning, Deep Learning, Natural Language Processing, and Human Assisted Computation)</i> to understand video from the inside out. We search inside video, making it easy to find the precise moments users are looking for. And, our technology unlocks new opportunities for creators, publishers, and brands to curate and monetize their video &mdash; whether archived or live. </p><br />
+
+                            <p>While our approach is sophisticated, the result for users is simple: the ability to quickly and easily discover, consume, explore, and share moments within any video, no matter the source.</p>
+                        </div> <!-- END proj-content -->
+                    </div> <!-- END proj-more-info -->
+
+                            <br />
+                            <br />
+                            <h3> See our Technology in Action:</h3>
+                            <div class="row"> <!-- ROW -->
+                                <div class="tag-proj col-xs-12 col-sm-6">
+                                    <img src="./images/tagasauris/tag-slide-bond.jpg" class="img-responsive"><br />
+                                    <a class="btn btn-default" href="http://videoanalysis.tagasauris.com" role="button" target="_blank">Demo: Video Decomposition<span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="margin-left:10px;"></span></a>
+                                </div>
+                                <div class="tag-proj col-xs-12 col-sm-6">
+                                    <img src="./images/tagasauris/tag-slide-gt.jpg" class="img-responsive"><br />
+                                    <a class="btn btn-default" href="http://search.tagasauris.com" role="button" target="_blank">Demo: Search within Video<span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="margin-left:10px;"></span></a>
+                                </div>
+                            </div> <!-- END ROW -->
+                            <div class="row"> <!-- ROW -->
+                                <div class="tag-proj col-xs-12 col-sm-6">
+                                    <img src="./images/tagasauris/tag-slide-hmplayer.jpg" class="img-responsive"><br />
+                                    <a class="btn btn-default" href="./projects/hmplayer.html" role="button">HyperMedia Player (alpha)<span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="margin-left:10px;"></span></a>
+                                </div>
+                                <div class="tag-proj col-xs-12 col-sm-6">
+                                    <img src="./images/tagasauris/tag-slide-mobile.jpg" class="img-responsive"><br />
+                                    <a class="btn btn-default" href="http://share.framerjs.com/eui64o0t03zt/" role="button" target="_blank">Prototype: Mobile App<span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="margin-left:10px;"></span></a>
+                                </div>
+                            </div> <!-- END ROW -->
+                            <div class="row">
+                                <div class="tag-proj col-xs-12 col-sm-6">
+                                    <img src="./images/tagasauris/tag-slide-nashville.jpg" class="img-responsive"><br />
+                                    <a class="btn btn-default" href="./projects/disney.html" role="button">The TV Genome for Disney/ABC<span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="margin-left:10px;"></span></a>
+                                </div>
+                                <div class="tag-proj col-xs-12 col-sm-6">
+                                    <img src="./images/tagasauris/tag-slide-syt.jpg" class="img-responsive"><br />
+                                    <a class="btn btn-default" href="./projects/syt.html" role="button">Demo: ShopYouTube<span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="margin-left:10px;"></span></a>
+                                </div>
+                                <!-- <div class="tag-proj col-xs-12 col-sm-6">
+                                    <img src="./images/tagasauris/tag-slide-hyperted.jpg" class="img-responsive"><br />
+                                    <a class="btn btn-default" href="http://linkedtv.eurecom.fr/Hyperted/" role="button">Mediafragment Search: HyperTED<span class="glyphicon glyphicon-arrow-right" aria-hidden="true" style="margin-left:10px;"></span></a>
+                                </div> -->
+                            </div>
+                  </div>
+              </div> <!-- END ROW -->
+
+              <!-- <h2 style="margin-left:30px;">Some Older Work:</h2> -->
+              <div class="text-center proj-buttons">
+                  <a class="btn btn-default" id="show-past-work" role="button">View Some of My Past Work<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true" style="margin-left:10px;"></span></a>
+              </div>
+          </div> <!-- END all-projects-offset -->
+        </div> <!-- END CONTAINER -->
+    </section> <!-- END section all-projects -->
+
+    <section class="past-work" id="past-work" style="display:none;">
+        <div class="container">
+            <span class="glyphicon glyphicon-remove pull-right" id="old-work-close"aria-hidden="true"></span>
+            <div id="old-work">
+                <h2>I've had the opportunity to design products &amp; services for:</h2><br />
+                <img src="./images/brands.png" class="img-responsive"><br /><br />
+                <h2>Selected work:</h2><br />
+
+                <!-- IMAGEBRIEF PROJECT -->
+                <div class="row"> <!-- ROW -->
+                    <!-- IMAGEBRIEF PROJECT -->
+                    <div class="proj-old col-xs-12">
+                        <div id="imagebrief" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                              <li data-target="#imagebrief" data-slide-to="0" class="active"></li>
+                              <li data-target="#imagebrief" data-slide-to="1"></li>
+                              <li data-target="#imagebrief" data-slide-to="2"></li>
+                              <li data-target="#imagebrief" data-slide-to="3"></li>
+                              <li data-target="#imagebrief" data-slide-to="4"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                              <div class="item active">
+                                <img src="./images/imagebrief/ib-slide-logo.jpg" alt="imagebrief">
+                              </div>
+                              <div class="item">
+                                <img src="./images/imagebrief/ib-slide-ABlanding.jpg" alt="Art Buyer Landing Page">
+                              </div>
+                              <div class="item">
+                                <img src="./images/imagebrief/ib-slide-TOGlanding.jpg" alt="Photographer Landing Page">
+                              </div>
+                              <div class="item">
+                                <img src="./images/imagebrief/ib-slide-brief.jpg" alt="Brief Page">
+                              </div>
+                              <div class="item">
+                                <img src="./images/imagebrief/ib-slide-profile.jpg" alt="Profile Page">
+                              </div>
+                            </div>
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#imagebrief" role="button" data-slide="prev">
+                              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#imagebrief" role="button" data-slide="next">
+                              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <!-- PROJECT TITLE -->
+                        <div class="proj-name">ImageBrief:</div>
+                        <div class="proj-explainer">Disrupting the world of stock images for both buyers and photographers. I helped ImageBrief redesign every aspect of their product experience.</div>
+                        <div class="proj-buttons">
+                          <a class="btn btn-default" href="./projects/imagebrief.html" role="button">Learn more<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="margin-left:10px;"></span></a>
+                      </div>
+                    </div>
+                </div> <!-- END ROW -->
+
+                <div class="row"> <!-- ROW -->
+                <!-- BARTLETT'S PROJECT -->
+                      <div class="proj-old col-xs-12 col-sm-6">
+                          <img src="./images/bartletts/bartletts-slide-1.jpg" class="img-responsive">
+                          <!-- PROJECT TITLE -->
+                          <div class="proj-name">Bartlett's Familiar Quotations</div>
+                          <div class="proj-explainer">20,000 famous quotes, now available right in your pocket.</div>
+                          <div class="proj-buttons">
+                            <a class="btn btn-default" href="./projects/bartletts.html" role="button">Learn more<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="margin-left:10px;"></span></a>
+                        </div>
+                      </div>
+                      <!-- IICD PROJECT -->
+                      <div class="proj-old col-xs-12 col-sm-6">
+                          <div id="iicd" class="carousel slide" data-ride="carousel" data-interval="false">
+                              <!-- Indicators -->
+                              <ol class="carousel-indicators">
+                                <li data-target="#iicd" data-slide-to="0" class="active"></li>
+                                <li data-target="#iicd" data-slide-to="1"></li>
+                                <li data-target="#iicd" data-slide-to="2"></li>
+                                <li data-target="#iicd" data-slide-to="3"></li>
+                                <li data-target="#iicd" data-slide-to="4"></li>
+                                <li data-target="#iicd" data-slide-to="5"></li>
+                                <li data-target="#iicd" data-slide-to="6"></li>
+                                <li data-target="#iicd" data-slide-to="7"></li>
+                                <li data-target="#iicd" data-slide-to="8"></li>
+                              </ol>
+                              <!-- Wrapper for slides -->
+                              <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                  <img src="./images/iicd/iicd-slide-1.jpg" alt="If I Can Dream">
+                                </div>
+                                <div class="item">
+                                  <img src="./images/iicd/iicd-slide-2.jpg" alt="If I Can Dream">
+                                </div>
+                                <div class="item">
+                                  <img src="./images/iicd/iicd-slide-3.jpg" alt="If I Can Dream">
+                                </div>
+                                <div class="item">
+                                  <img src="./images/iicd/iicd-slide-4.jpg" alt="If I Can Dream">
+                                </div>
+                                <div class="item">
+                                  <img src="./images/iicd/iicd-slide-5.jpg" alt="If I Can Dream">
+                                </div>
+                                <div class="item">
+                                  <img src="./images/iicd/iicd-slide-6.jpg" alt="If I Can Dream">
+                                </div>
+                                <div class="item">
+                                  <img src="./images/iicd/iicd-slide-7.jpg" alt="If I Can Dream">
+                                </div>
+                                <div class="item">
+                                  <img src="./images/iicd/iicd-slide-8.jpg" alt="If I Can Dream">
+                                </div>
+                                <div class="item">
+                                  <img src="./images/iicd/iicd-slide-9.jpg" alt="If I Can Dream">
+                                </div>
+                              </div>
+                              <!-- Controls -->
+                              <a class="left carousel-control" href="#iicd" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="#iicd" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                          </div>
+                          <!-- PROJECT TITLE -->
+                          <div class="proj-name">If I Can Dream</div>
+                          <div class="proj-explainer">Reality TV, reinvented for our digital-first world.</div>
+                          <div class="proj-buttons">
+                            <a class="btn btn-default" href="./projects/iicd.html" role="button">Learn more<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="margin-left:10px;"></span></a>
+                        </div>
+                    </div> <!-- END IICD -->
+                  </div> <!-- END ROW -->
+
+                  <div class="row"> <!-- ROW -->
+                      <!-- DATE NIGHT IS PROJECT -->
+                      <div class="proj-old col-xs-12">
+                          <div id="dni" class="carousel slide" data-ride="carousel" data-interval="false">
+                              <!-- Indicators -->
+                              <ol class="carousel-indicators">
+                                <li data-target="#dni" data-slide-to="0" class="active"></li>
+                                <li data-target="#dni" data-slide-to="1"></li>
+                                <li data-target="#dni" data-slide-to="2"></li>
+                                <li data-target="#dni" data-slide-to="3"></li>
+                              </ol>
+                              <!-- Wrapper for slides -->
+                              <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                  <img src="./images/dni/dni-slide-1.jpg" alt="Date Night Is...">
+                                </div>
+                                <div class="item">
+                                  <img src="./images/dni/dni-slide-2.jpg" alt="Date Night Is...">
+                                </div>
+                                <div class="item">
+                                  <img src="./images/dni/dni-slide-3.jpg" alt="Date Night Is...">
+                                </div>
+                                <div class="item">
+                                  <img src="./images/dni/dni-slide-4.jpg" alt="Date Night Is...">
+                                </div>
+                              <!-- Controls -->
+                              <a class="left carousel-control" href="#dni" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="#dni" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                              </div>
+                          </div>
+                          <!-- PROJECT TITLE -->
+                          <div class="proj-name">Date Night Is...</div>
+                          <div class="proj-explainer">I led a small team in creating this application to recommend location-specific, interest-aware date ideas for couples in established relationships.</div>
+                          <div class="proj-buttons">
+                            <a class="btn btn-default" href="./projects/dni.html" role="button">Learn more<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="margin-left:10px;"></span></a>
+                        </div>
+                      </div> <!-- END DATE NIGHT IS PROJECT -->
+                  </div> <!-- END ROW -->
+
+                      <!-- MOMA & TOMORROW LAB PROJECT -->
+                        <div class="row"> <!-- ROW -->
+                            <!-- MOMA PROJECT -->
+                            <div class="proj-old col-xs-12 col-sm-6">
+                                <div id="moma" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                      <li data-target="#moma" data-slide-to="0" class="active"></li>
+                                      <li data-target="#moma" data-slide-to="1"></li>
+                                      <li data-target="#moma" data-slide-to="2"></li>
+                                      <li data-target="#moma" data-slide-to="3"></li>
+                                      <li data-target="#moma" data-slide-to="4"></li>
+                                      <li data-target="#moma" data-slide-to="5"></li>
+                                      <li data-target="#moma" data-slide-to="6"></li>
+                                      <li data-target="#moma" data-slide-to="7"></li>
+                                    </ol>
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" role="listbox">
+                                      <div class="item active">
+                                        <img src="./images/moma/moma-slide-1.jpg" alt="I Went to MoMA and...">
+                                      </div>
+                                      <div class="item">
+                                        <img src="./images/moma/gallery3.jpg" alt="MoMA Installation">
+                                      </div>
+                                      <div class="item">
+                                        <img src="./images/moma/moma-slide-2.jpg" alt="MoMA Website">
+                                      </div>
+                                      <div class="item">
+                                        <img src="./images/moma/gallery6.jpg" alt="I Went to MoMA and...">
+                                      </div>
+                                      <div class="item">
+                                        <img src="./images/moma/gallery7.jpg" alt="I Went to MoMA and...">
+                                      </div>
+                                      <div class="item">
+                                        <img src="./images/moma/gallery8.jpg" alt="I Went to MoMA and...">
+                                      </div>
+                                      <div class="item">
+                                        <img src="./images/moma/gallery9.jpg" alt="I Went to MoMA and...">
+                                      </div>
+                                      <div class="item">
+                                        <img src="./images/moma/gallery5.jpg" alt="I Went to MoMA and...">
+                                      </div>
+                                    </div>
+                                    <!-- Controls -->
+                                    <a class="left carousel-control" href="#moma" role="button" data-slide="prev">
+                                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                      <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control" href="#moma" role="button" data-slide="next">
+                                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                      <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                                <!-- PROJECT TITLE -->
+                                <div class="proj-name">I Went to MoMA and...</div>
+                                <div class="proj-explainer">A museum experience that lives on, even after you leave.</div>
+                                <div class="proj-buttons">
+                                  <a class="btn btn-default" href="./projects/moma.html" role="button">Learn more<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="margin-left:10px;"></span></a>
+                              </div>
+                          </div> <!-- END MOMA -->
+                          <!-- TOMORROW LAB PROJECT -->
+                          <div class="proj-old col-xs-12 col-sm-6">
+                              <div id="tlab" class="carousel slide" data-ride="carousel" data-interval="false">
+                                  <!-- Indicators -->
+                                  <ol class="carousel-indicators">
+                                    <li data-target="#tlab" data-slide-to="0" class="active"></li>
+                                    <li data-target="#tlab" data-slide-to="1"></li>
+                                    <li data-target="#tlab" data-slide-to="2"></li>
+                                    <li data-target="#tlab" data-slide-to="3"></li>
+                                  </ol>
+                                  <!-- Wrapper for slides -->
+                                  <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                      <img src="./images/acwis/tlab-slide-logo.jpg" alt="Tomorrow Lab">
+                                    </div>
+                                    <div class="item">
+                                      <img src="./images/acwis/tlab-slide-home.jpg" alt="Tomorrow Lab">
+                                    </div>
+                                    <div class="item">
+                                      <img src="./images/acwis/tlab-slide-make.jpg" alt="Tomorrow Lab">
+                                    </div>
+                                    <div class="item">
+                                      <img src="./images/acwis/tlab-slide-dedication.jpg" alt="Tomorrow Lab">
+                                    </div>
+                                  </div>
+                                  <!-- Controls -->
+                                  <a class="left carousel-control" href="#tlab" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="right carousel-control" href="#tlab" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                              </div>
+                              <!-- PROJECT TITLE -->
+                              <div class="proj-name">Tommorrow Lab</div>
+                              <div class="proj-explainer">A product platform that personalizes science and brings philanthropy to the masses.</div>
+                              <div class="proj-buttons">
+                                <a class="btn btn-default" href="./projects/acwis.html" role="button">Learn more<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="margin-left:10px;"></span></a>
+                            </div>
+                        </div> <!-- END MOMA -->
+                    </div> <!-- END ROW -->
+
+              <!-- YKYWAASW & I WANNA NOM PROJECTS -->
+                <div class="row"> <!-- ROW -->
+                    <!-- YKYWAASW PROJECT -->
+                    <div class="proj-old col-xs-12 col-sm-6">
+                          <img src="./images/ykywaasw/ykywaasw-slide-1.jpg" class="img-responsive">
+                          <!-- PROJECT TITLE -->
+                          <div class="proj-name">YKYWAASW...</div>
+                          <div class="proj-explainer">A humorously insightful look into the lives of entrepreneurs.</div>
+                          <div class="proj-buttons">
+                            <a class="btn btn-default" href="./projects/ykywaasw.html" role="button">Learn more<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="margin-left:10px;"></span></a>
+                        </div>
+                    </div> <!-- END YKYWAASW -->
+                    <!-- I WANNA NOM PROJECT -->
+                    <div class="proj-old col-xs-12 col-sm-6">
+                        <div id="nom" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                              <li data-target="#nom" data-slide-to="0" class="active"></li>
+                              <li data-target="#nom" data-slide-to="1"></li>
+                              <li data-target="#nom" data-slide-to="2"></li>
+                              <li data-target="#nom" data-slide-to="3"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                              <div class="item active">
+                                <img src="./images/nom/nom-slide-logo.jpg" alt="Date Night Is...">
+                              </div>
+                              <div class="item">
+                                <img src="./images/nom/nom-slide-bookmarklet.jpg" alt="Date Night Is...">
+                              </div>
+                              <div class="item">
+                                <img src="./images/nom/nom-slide-home.jpg" alt="Date Night Is...">
+                              </div>
+                              <div class="item">
+                                <img src="./images/nom/nom-slide-detail.jpg" alt="Date Night Is...">
+                              </div>
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#nom" role="button" data-slide="prev">
+                              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#nom" role="button" data-slide="next">
+                              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                            </div>
+                        </div>
+                        <!-- PROJECT TITLE -->
+                        <div class="proj-name">I Wanna Nom!</div>
+                        <div class="proj-explainer">A cookbook designed for the digital space, our platform allowed users to save and share recipes from any website. We grew I Wanna Nom to serve thousands of users before Pinterest came along and ate our lunch. <i>(See what I did there?)</i>
+                        </div>
+                        <!-- <div class="proj-buttons">
+                          <a class="btn btn-default" href="./projects/dni.html" role="button">Learn more<span class="glyphicon glyphicon-info-sign" aria-hidden="true" style="margin-left:10px;"></span></a>
+                      </div> -->
+                  </div> <!-- END I WANNA NOM PROJECT -->
+                </div> <!-- END ROW -->
+
+          </div> <!-- END #old-work -->
+    </div> <!-- END CONTAINER -->
+</section> <!-- END section past-work -->
+
 
   <section class="about-self">
       <div class="container">
           <div class="row">
-              <div class="col-sm-8 col-sm-offset-2">
+              <!-- <div clas="col-xs-12 col-sm-4">
+                  <img src="./images/resume-main.jpg" class="img-responsive pull-left" style="margin:60px 30px 0 0; max-width:300px;">
+              </div> -->
+              <div class="col-sm-12 col-md-6">
                   <h3 class="description-title">
                       A bit more about me:
                   </h3>
-
                   <ul>
                       <li>
-                          I have ten+ years experience in: Product Design &amp; Management, Visual Design, UX Strategy &amp; Design, and Creative Strategy, including management of strategy, design, and development teams.
+                          I'm a product design &amp; strategy leader with 12+ years of design and technology experience and  8+ years managing teams. I've created products/services for both startups and Fortune 500 companies.
                       </li>
                       <li>
-                          Co-Creator of: <a href="http://datenight.is/" target="_blank" class="red-hover">Date Night Is...</a>
-                          , <a href="http://beanstalklabs.co/" target="_blank" class="red-hover">Beanstalk Labs</a>, and <strong>I Wanna Nom</strong>.
+                          I've trained and mentored team members who have gone on to found companies of their own and moved on to roles at Facebook, Makerbot, and other tech companies &amp; agencies.
                       </li>
                       <li>
-                          Formerly: Director of Creative Strategy at <a href="http://www.pokelondon.com" target="_blank" class="red-hover">POKE</a> <strong>NY</strong> (now known as <a href="http://www.itsmakeable.com/" target="_blank" class="red-hover">Makeable</a>).
+                          Co-Creator of: <a href="./projects/dni.html" class="red-hover">Date Night Is...</a> and <strong>I Wanna Nom</strong>.
                       </li>
                       <li>
-                          Past clients include: W42ST, 4C, ImageBrief, MoMA, American Express, General Mills, Dyson, DailyMotion, 19 Entertainment, TruTV, Getty Images, and many more.
+                          Currently <strong>Head of Product</strong> at <a href="https://www.tagasauris.com/" class="red-hover" target="_blank">Tagasauris</a>.<br />Formerly <strong>Director of Product</strong> at <a href="http://pokelondon.com/" class="red-hover" target="_blank">POKE</a> <strong>NY</strong> (now called <a href="http://www.itsmakeable.com/" class="red-hover" target="_blank">Makeable</a>).
                       </li>
                       <li>
-                          Currently <a href="./projects/ykywaasw.html" class="red-hover">growing my skills</a> in HTML, CSS, Javascript, &amp; Ruby on Rails.
-                      </li>
-                      <li>
-                          View, or grab a copy of my resume <a href="./projects/resume.html" class="red-hover">here</a>.
+                          Grab a copy of my resume <a href="https://www.dropbox.com/s/72pq481dinmewcd/Danny%20Nathan%20Resume.pdf?dl=0" class="red-hover" target="_blank">here</a>.
                   </ul>
               </div>
+          <div class="col-sm-12 col-md-6">
+              <h3 class="description-title">
+                  FAQ's:
+              </h3>
+              <ul>
+                  <li>
+                      <strong>Are you a product designer or a product manager?</strong>
+                      I sit at the intersection of product design &amp; management. I have experience with both disciplines, and I believe that at the senior-most level, the two are inextricably entwined.
+                  </li>
+                  <li>
+                      <strong>Are you a "full stack" designer?</strong>
+                      I am well versed in the capabilities of today's primary technologies. I'm skillful with HTML/CSS and actively working with JavaScript/CoffeeScript for prototyping, primarily in FramerJS.
+                  </li>
+                  <li>
+                      <strong>Have you designed for mobile?</strong>
+                      I have designed multiple iOS applications and many mobile-ready web apps. I'm also familiar with Google's Material design framework.
+                  </li>
+                  <li>
+                      <strong>Do you have experience managing &amp; growing teams?</strong>
+                      I have managed teams ranging from 2-20 people through every aspect of the ideation, presentation, design, and development process. I'm comfortable mentoring young designers &amp; fostering teamwork/growth in an organization.
+              </ul>
           </div>
+      </div>
       </div>
   </section>
-
-  <section class="blockquote twitter-blockquote">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-sm-8 col-sm-offset-1">
-
-            <div id="twitter_container"></div>
-
-            <cite>- <a href="http://twitter.com/Amongmany" target="_blank">@Amongmany</a></cite>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <footer class="lower">
 		<div class="container">
