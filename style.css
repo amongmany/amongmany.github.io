@@ -82,12 +82,15 @@ header h1 {
 header h2 {
   color: #464e54;
   font: normal 18px/24px 'Istok Web', sans-serif;
+<<<<<<< HEAD
   font-family: 'Istok Web', sans-serif;
   margin: 10px 0 0 0;
 }
 header h3 {
   color: #464e54;
   font: normal 22px/28px 'Istok Web', sans-serif;
+=======
+>>>>>>> master
   font-family: 'Istok Web', sans-serif;
   margin: 10px 0 0 0;
 }
@@ -570,7 +573,7 @@ section.project-details {
       font-family: 'Istok Web', sans-serif;
       margin: 10px 0 0 0;
     }
-    .intro {
+    header .intro {
         margin-top: 100px;
         margin-bottom: 300px;
     }
