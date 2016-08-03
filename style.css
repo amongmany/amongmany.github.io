@@ -7,10 +7,17 @@
 .available {
     text-align: center;
     color: #fff;
-    background-color: #64b450;
-    padding-top: 7px;
+    background-color: #02b675;
+    padding-top: 9px;
     height: 40px;
     font: normal 18px/25px 'Istok Web', sans-serif;
+}
+.available a {
+    color: #fff;
+}
+.available a:hover {
+    color: #fff;
+    text-decoration: none;
 }
 .social-links-header {
     background: #fafafa;
@@ -26,6 +33,9 @@
   display: block;
   float: left;
   width: auto;
+}
+.social-links-header .social-links li {
+    maring-right: 0;
 }
 .social-links li a {
   width: 55px;
@@ -45,6 +55,18 @@
 }
 .social-links li.linkedin a:hover {
   background: #00476c;
+}
+.social-links li.wnw a {
+  background: #02b675;
+}
+.social-links li.wnw a:hover {
+  background: #01774c;
+}
+.social-links li.dribbble a {
+  background: #ea4c89;
+}
+.social-links li.dribbble a:hover {
+  background: #c32361;
 }
 .social-links li.twitter a {
   background: #4096cb;
@@ -144,7 +166,7 @@ section.all-projects {
 }
 .proj-buttons .btn-default {
     background-image: none;
-    border-radius: 0px;
+    border-radius: 2px;
     background-color: #ef3932;
     color: #ffffff;
     text-shadow: none;
@@ -152,10 +174,12 @@ section.all-projects {
     font: 400 16px/16px 'Istok Web', sans-serif;
     text-transform: uppercase;
     padding: 6px 20px;
+    border-bottom: 2px solid #c9241d;
 }
 .proj-buttons .btn-default:hover {
     background-color: #c9241d;
     color: #ffffff;
+    border-bottom: 2px solid #c9241d;
 }
 
 .proj-more-info {
@@ -164,7 +188,7 @@ section.all-projects {
 }
 .tag-proj .btn-default {
     background-image: none;
-    border-radius: 0px;
+    border-radius: 2px;
     background-color: #ef3932;
     color: #ffffff;
     text-shadow: none;
@@ -173,10 +197,12 @@ section.all-projects {
     text-transform: uppercase;
     padding: 6px 20px;
     margin-bottom: 0px;
+    border-bottom: 2px solid #c9241d;
 }
 .tag-proj .btn-default:hover {
     background-color: #c9241d;
     color: #ffffff;
+    border-bottom: 2px solid #c9241d;
 }
 .proj-content p {
     color: #ffffff;
@@ -496,7 +522,7 @@ footer .social-links {
   ul.social-links {
     padding: 0px 0 0 15px;
   }
-  .social-links li {
+  .social-links-footer .social-links li {
     display: inline;
     margin-right: -5px;
     width: auto;
