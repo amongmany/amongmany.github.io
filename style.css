@@ -220,7 +220,11 @@ section.all-projects {
 /* ---------------------------------------------------------SECTION PAST-WORK */
 .past-work {
     background-color: #535e66;
-    padding: 80px 0 0 0;
+    padding: 60px 0 0 0;
+}
+.past-work h1 {
+    color: #ffffff;
+    font: normal 38px/40px 'Istok Web', sans-serif;
 }
 .past-work h2 {
     color: #ffffff;
